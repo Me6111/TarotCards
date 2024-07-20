@@ -1,0 +1,99 @@
+/* Portal.css */
+
+.appContainer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh; /* Use viewport height to ensure it takes up the whole screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+    overflow-x: hidden;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start of the container */
+    align-items: center;
+    /* Removed height and width auto settings */
+}
+
+
+
+.imgField {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.imgField img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imgField0 {
+    z-index: 3;
+    width: 40%;
+    height: 80%;
+    top: 0px;
+    left: 0px;
+    margin-left: 1%;
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+#imgField00 {
+    z-index: 2;
+    width: 100%;
+    height: 200%;
+    top: 10px;
+    left: 0px;
+    margin-left: 8%;
+    opacity: 0.6;
+    border-left: 1px solid white;
+}
+
+
+.titleField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Changed to absolute for precise control */
+    top: 1070px; /* Positioned 500px from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Centered horizontally */
+    width: 100%;
+    height: 40px;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-size: 15px;
+}
+@media (min-width: 768px) {
+    .titleField {
+        font-size: 25px;
+    }
+}
+
+
+
+
+.deathTitle {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    color: white; 
+    font-size: 35px;
+    z-index: 4;
+}
+@media (min-width: 768px) {
+    .deathTitle {
+        font-size: 75px;
+    }
+}
