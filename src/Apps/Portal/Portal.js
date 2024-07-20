@@ -7,10 +7,10 @@
 // C:\Users\user\Desktop\projects\project-manager\src\Apps\Portal\Portal.js
 
 import React from 'react';
-import MainMenu from '../../components/MainMenu/MainMenu'; 
+//import MainMenu from '../../components/MainMenu/MainMenu'; 
 import './Portal.css'; 
 import img0 from './img00.jpg'; 
-import img1 from './img1.jpg'; 
+//import img1 from './img1.jpg'; 
 
 
 const Portal = () => {
