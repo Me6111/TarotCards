@@ -1,99 +1,158 @@
-/* Portal.css */
+
+
+
+
+
 
 .appContainer {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 100vh; /* Use viewport height to ensure it takes up the whole screen */
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto; /* Ensure vertical scrolling is enabled */
-    overflow-x: hidden;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align items to the start of the container */
-    align-items: center;
-    /* Removed height and width auto settings */
-}
-
-
-
-.imgField {
     position: absolute;
-    box-sizing: border-box;
-}
-
-.imgField img {
-    top: 0;
+    margin: 0;
     left: 0;
+    top: 0;
+
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-#imgField0 {
-    z-index: 3;
-    width: 40%;
-    height: 80%;
-    top: 0px;
-    left: 0px;
-    margin-left: 1%;
-    opacity: 0.9;
-    border: 1px solid white;
-}
-
-#imgField00 {
-    z-index: 2;
-    width: 100%;
-    height: 200%;
-    top: 10px;
-    left: 0px;
-    margin-left: 8%;
-    opacity: 0.6;
-    border-left: 1px solid white;
+    background-color: black;
 }
 
 
-.titleField {
+.img0scontainer {
+    position: relative;
+    width: 100%; 
+    height: 1700px;
+    overflow: hidden; 
+
+    background-color: black;
+}
+
+.imgField {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute; /* Changed to absolute for precise control */
-    top: 1070px; /* Positioned 500px from the top */
-    left: 50%;
-    transform: translateX(-50%); /* Centered horizontally */
+}
+
+
+
+
+
+
+
+
+#imgField0front {
+    opacity: 0.9;
+
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 40%;
+    height: 65%; 
+    height: 680px;
+    z-index: 2;
+}
+
+#imgField0front img {
     width: 100%;
-    height: 40px;
-    z-index: 4;
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    font-size: 15px;
+    height: 100%;
+    object-fit: cover; 
 }
-@media (min-width: 768px) {
-    .titleField {
-        font-size: 25px;
-    }
-}
-
-
-
 
 .deathTitle {
+    color: rgb(255, 255, 255);
+
+    z-index: 1000;
+    font-size: 60px;
+
     position: absolute;
-    bottom: 10px; 
-    right: 10px; 
-    color: white; 
-    font-size: 35px;
-    z-index: 4;
+    left: 7px;
+    bottom: 80px;
+
+    text-shadow: 
+    -2px 0 black,
+     0 2px black,
+     2px 0 black,
+     0 -2px black; /* Apply shadow to all sides */
+
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .deathTitle {
-        font-size: 75px;
+        font-size: 100px;
+        left: auto;
+        right: 7px;
+        bottom: 0;
+
+
     }
 }
+
+
+#imgField0back {
+
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 100%;
+    width: 250%;
+
+    height: 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media (min-width: 450px) {
+    #imgField0back {
+        top: -20px;
+        left: 160px;
+        width: 100%;
+
+    }
+}
+
+#imgField0back img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0.6;
+
+    
+}
+
+
+.subTitle {
+    color: rgb(255, 255, 255);
+
+    z-index: 1000;
+    font-size: 50px;
+    width: 25%;
+
+
+    position: absolute;
+    left: 5px;
+
+    bottom: 25%;
+
+    text-shadow: 
+    -2px 0 rgb(0, 0, 0, 0.5),
+     0 2px rgb(0, 0, 0, 0.5),
+     2px 0 rgb(0, 0, 0, 0.5),
+     0 -2px rgb(0, 0, 0, 0.5); 
+}
+@media (min-width: 800px) {
+    .subTitle {
+        font-size: 100px;
+        left: auto;
+        right: 18%;
+        bottom: 20%;
+        width: 50%;
+
+
+    }
+}
+
+
