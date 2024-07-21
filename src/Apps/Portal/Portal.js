@@ -34,6 +34,13 @@ const Portal = () => {
 
 
                 </div>
+
+
+                <div className="imgField" id="imgField0front">
+                    <img src={img0} alt="front" />
+                </div>
+
+
             </div>
 
 
