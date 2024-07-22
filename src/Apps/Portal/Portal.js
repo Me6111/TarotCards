@@ -3,6 +3,8 @@ import './Portal.css';
 import img0 from './img00.jpg'; 
 import circleImg from './circles0.jpg';
 
+import chuck0 from './chuck0.jpg';
+
 const Portal = () => {
     return (
         <div className="appContainer" id="titleSection">
@@ -25,6 +27,18 @@ const Portal = () => {
 
             <div className="imgField" id="circleImg">
                 <img src={circleImg} alt="circleImg" />
+            </div>
+
+
+
+
+
+            <div className="section" id="plot">
+                <div className="imgField" id="chuck0">
+                    <img src={chuck0} alt="chuck0" />
+                </div>
+
+                <div className="plotText">Chuck Shuldiner </div>
             </div>
         
         </div>
