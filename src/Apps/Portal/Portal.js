@@ -1,8 +1,6 @@
 import React from 'react';
 import './Portal.css';
 import img0 from './img00.jpg';
-import circleImg from './circles0.jpg';
-import deathImg from './deathImg.jpg';
 import Plot from './sections/plot/Plot'; // Import Plot component
 
 const Portal = () => {
@@ -31,7 +29,7 @@ const Portal = () => {
 export default Portal;
 
 
-
+// import circleImg from './circles0.jpg';
 //<div className="imgField" id="circleImg">
 //<img src={circleImg} alt="circleImg" />
 //</div>
