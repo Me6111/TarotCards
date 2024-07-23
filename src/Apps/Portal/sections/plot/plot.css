@@ -1,0 +1,78 @@
+
+
+
+
+.plotImg {
+    display: flex;
+    width: 100%; 
+}
+
+.plotImg img {
+    flex-grow: 1; 
+    width: 50%; 
+    height: auto; 
+}
+@media (max-width: 800px) {
+    .plotImg img {
+        z-index: 0;
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+.chuck0textField {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+}
+@media (max-width: 800px) {
+    .chuck0textField {
+        z-index: 1;
+        width: 30%;
+    }
+}
+
+.chuck0text {
+    color: rgb(255, 255, 255);
+
+    text-shadow: 
+    -2px 0 rgb(0, 0, 0, 0.5),
+     0 2px rgb(0, 0, 0, 0.5),
+     2px 0 rgb(0, 0, 0, 0.5),
+     0 -2px rgb(0, 0, 0, 0.5); 
+}
+@media (min-width: 800px) {
+    .chuck0text {
+        font-size: 50px;
+    }
+}
+@media (max-width: 800px) {
+    .chuck0text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .plotImg {
+        position: relative; /* Establishes a positioning context for absolute positioning of child elements */
+    }
+    
+    .plotImg img {
+        width: 100%; /* Makes the image take the full width of its parent */
+        height: auto;
+        display: block; /* Removes default margin/padding */
+    }
+    
+    .chuck0textField {
+        position: absolute; /* Positions this element absolutely within .plotImg */
+        bottom: 0; /* Aligns the top edge of this element with the top edge of .plotImg */
+        left: 5px; /* Aligns the left edge of this element with the left edge of .plotImg */
+        width: 30%; /* Takes the full width of .plotImg */
+        height: auto; /* Takes the full height of .plotImg */
+    }
+    
+}
