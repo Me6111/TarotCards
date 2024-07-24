@@ -2,22 +2,28 @@
 
 
 
-.plotImg {
+#plotImgchuck0 {
     display: flex;
     width: 100%; 
 }
 
-.plotImg img {
-    flex-grow: 1; 
-    width: 50%; 
-    height: auto; 
+#chuck0ImgField {
+    width: 100%;
+    overflow: hidden;
 }
-@media (max-width: 800px) {
-    .plotImg img {
-        z-index: 0;
-        width: 100%;
-        left: 0;
-    }
+
+.imgField1 {
+    width: 100%;
+}
+
+#chuck0ImgField img {
+    opacity: 0.8;
+
+    flex-grow: 1; 
+    width: 100%; 
+    height: auto; 
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -28,51 +34,66 @@
     align-items: center;
     justify-content: center;
     gap: 5px; 
-}
-@media (max-width: 800px) {
-    .chuck0textField {
-        z-index: 1;
-        width: 30%;
-    }
-}
-
-.chuck0text {
+    font-size: 50px;
     color: rgb(255, 255, 255);
+    width: 40%;
 
     text-shadow: 
     -2px 0 rgb(0, 0, 0, 0.5),
      0 2px rgb(0, 0, 0, 0.5),
      2px 0 rgb(0, 0, 0, 0.5),
      0 -2px rgb(0, 0, 0, 0.5); 
+
+
 }
-@media (min-width: 800px) {
-    .chuck0text {
-        font-size: 50px;
-    }
+.chuck0text {
+    text-align: center;
 }
-@media (max-width: 800px) {
-    .chuck0text {
-        font-size: 20px;
-    }
-}
+
+
+
+
+
 
 @media (max-width: 800px) {
     .plotImg {
-        position: relative; /* Establishes a positioning context for absolute positioning of child elements */
-    }
-    
-    .plotImg img {
-        width: 100%; /* Makes the image take the full width of its parent */
+        position: relative; 
         height: auto;
-        display: block; /* Removes default margin/padding */
     }
+    #chuck0ImgField {
+        position: absolute; /* Establishes a positioning context for absolutely positioned children */
+
+        right: 0;
+        width: 90%;
+    }
+
+    .imgField1 {
+        margin-left: -350px;
+    }
+        
+    #chuck0ImgField img {
+        right: 0;
+        width: auto; 
+        height: 700px;
+        display: block; 
+
+        z-index: 0;
+    }
+
     
     .chuck0textField {
-        position: absolute; /* Positions this element absolutely within .plotImg */
-        bottom: 0; /* Aligns the top edge of this element with the top edge of .plotImg */
-        left: 5px; /* Aligns the left edge of this element with the left edge of .plotImg */
-        width: 30%; /* Takes the full width of .plotImg */
-        height: auto; /* Takes the full height of .plotImg */
+        z-index: 1;
+
+        position: relative; 
+        bottom: -600px;
+        width: 80%; 
+        height: auto;
+        font-size: 40px;
+
     }
-    
+
+
+
 }
+
+
