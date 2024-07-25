@@ -1,99 +1,78 @@
-
-
-
-
-#plotImgchuck0 {
+.imgField1-0 {
     display: flex;
+    flex-direction: row;
+
     width: 100%; 
+    height: 100%; 
 }
+  
 
-#chuck0ImgField {
-    width: 100%;
-    overflow: hidden;
+.imgField1-1 {
+    position: relative;
+
+    z-index: 1; 
 }
-
-.imgField1 {
-    width: 100%;
-}
-
-#chuck0ImgField img {
+.imgField1-1 img {
     opacity: 0.8;
-
-    flex-grow: 1; 
-    width: 100%; 
-    height: auto; 
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
-.chuck0textField {
-    flex-grow: 1; 
+.txtField1 {
+    width: 40%;
+    z-index: 2; 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 5px; 
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    width: 40%;
-
-    text-shadow: 
-    -2px 0 rgb(0, 0, 0, 0.5),
-     0 2px rgb(0, 0, 0, 0.5),
-     2px 0 rgb(0, 0, 0, 0.5),
-     0 -2px rgb(0, 0, 0, 0.5); 
-
-
 }
-.chuck0text {
+
+.txt1 {
     text-align: center;
+
+    color: rgb(255, 255, 255);
+    text-shadow:
+      -2px 0 rgb(0, 0, 0, 0.5),
+      0 2px rgb(0, 0, 0, 0.5),
+      2px 0 rgb(0, 0, 0, 0.5),
+      0 -2px rgb(0, 0, 0, 0.5);
+    gap: 5px;
+    font-size: 50px;
+
 }
 
 
-
+  
 
 
 
 @media (max-width: 800px) {
-    .plotImg {
-        position: relative; 
-        height: auto;
-    }
-    #chuck0ImgField {
-        position: absolute; /* Establishes a positioning context for absolutely positioned children */
+    .imgField1-0 {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        overflow: hidden;
 
-        right: 0;
+    }
+
+    .txtField1 {
+        position: relative;
+        bottom: 100px;
+        width: auto;
+        bottom: 50px;
+    }
+    .txt1 {
+        font-size: 30px;
+    }
+
+    .imgField1-1 {
+        position: relative;
+        overflow: hidden;
+        left: -100px;
+        width: 200%; 
+
+
+    }
+    .imgField1-1 img {
+
+        object-fit: cover;
         width: 90%;
-    }
-
-    .imgField1 {
-        margin-left: -350px;
-    }
-        
-    #chuck0ImgField img {
-        right: 0;
-        width: auto; 
-        height: 700px;
-        display: block; 
-
-        z-index: 0;
-    }
-
-    
-    .chuck0textField {
-        z-index: 1;
-
-        position: relative; 
-        bottom: -600px;
-        width: 80%; 
         height: auto;
-        font-size: 40px;
-
     }
-
-
-
 }
-
-

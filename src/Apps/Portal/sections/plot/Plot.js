@@ -5,24 +5,32 @@
 
 import React from 'react';
 import './plot.css';
+import './plot2.css';
 
 import chuck0Image from './chuck0.jpg'; 
+import img1 from './img1.jpg'; 
 
 const Plot = () => {
   return (
-    <div className="section" id="plot">
+    <div className="section" id="section1">
 
-      <div className="plotImg" id="plotImgchuck0">
-        <div className="chuck0textField">
-          <div className="chuck0text">Chuck Shuldiner</div>
-          <div className="chuck0text">1967-2001</div>
+      <div class="imgField1-0">
+        <div className="txtField1">
+          <div className="txt1">Chuck Shuldiner</div>
+          <div className="txt1">1967-2001</div>
         </div>
-        <div className="imgField" id="chuck0ImgField">
-          <div className="imgField1">
-            <img src={chuck0Image} alt="chuck0" />
-          </div>
+        <div className="imgField1-1">
+          <img src={chuck0Image} alt="chuck0" />
         </div>
       </div>
+
+
+
+
+
+
+
+
     </div>
   );
 };
