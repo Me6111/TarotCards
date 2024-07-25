@@ -8,7 +8,6 @@ import './plot.css';
 import './plot2.css';
 
 import chuck0Image from './chuck0.jpg'; 
-//import img1 from './img1.jpg'; 
 
 const Plot = () => {
   return (
