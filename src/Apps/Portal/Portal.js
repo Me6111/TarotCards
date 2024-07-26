@@ -1,7 +1,8 @@
 import React from 'react';
 import './Portal.css';
 import img0 from './img00.jpg';
-import Plot from './sections/plot/Plot'; // Import Plot component
+import Plot from './sections/plot/Plot'; 
+import PrlxField0 from './sections/PrlxField0/PrlxField0';
 
 const Portal = () => {
   return (
@@ -21,7 +22,8 @@ const Portal = () => {
         </div>
       </div>
 
-        <Plot /> 
+      <Plot /> 
+      <PrlxField0 />
     </div>
   );
 };
