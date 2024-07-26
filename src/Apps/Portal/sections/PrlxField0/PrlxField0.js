@@ -3,7 +3,6 @@ import './PrlxField0.css';
 
 import img0 from './0.jpg'; 
 
-
 const PrlxField0 = () => {
   // Create a ref to the target element
   const txtRef = React.useRef(null);
@@ -27,13 +26,16 @@ const PrlxField0 = () => {
 
   // Use the ref and observer in a useEffect hook
   React.useEffect(() => {
-    if (txtRef.current) {
-      observer.current.observe(txtRef.current);
+    const observerInstance = observer.current;
+    const txtRefCurrent = txtRef.current;
+
+    if (txtRefCurrent) {
+      observerInstance.observe(txtRefCurrent);
     }
 
     return () => {
-      if (txtRef.current) {
-        observer.current.unobserve(txtRef.current);
+      if (txtRefCurrent) {
+        observerInstance.unobserve(txtRefCurrent);
       }
     };
   }, []);
