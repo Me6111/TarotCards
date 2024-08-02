@@ -7,6 +7,9 @@ const Portal = () => {
   const portalRef = useRef(null); // Create a ref for the Portal container
 
   useEffect(() => {
+    // Store the current value of portalRef.current in a variable
+    const currentPortal = portalRef.current;
+
     // Custom smooth scroll function (without upward scroll)
     const scrollToBottom = (elementId, duration) => {
       const targetElement = document.getElementById(elementId);
@@ -36,14 +39,14 @@ const Portal = () => {
       }, 5000);
 
       // Prevent default scrolling behavior within the Portal container
-      portalRef.current.addEventListener('wheel', (event) => {
+      currentPortal?.addEventListener('wheel', (event) => {
         event.preventDefault();
       });
     };
 
     return () => {
-      // Correctly remove event listener on unmount to prevent memory leaks
-      portalRef.current.removeEventListener('wheel');
+      // Use the stored variable in the cleanup function
+      currentPortal?.removeEventListener('wheel');
     };
   }, []);
 
