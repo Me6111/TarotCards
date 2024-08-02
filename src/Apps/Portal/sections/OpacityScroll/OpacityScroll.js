@@ -30,8 +30,8 @@ const OpacityScroll = () => {
       let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
       signs.forEach((sign, index) => {
-        const revealHeight = 8000 * index;
-        const fadeHeight = 3000;
+        const revealHeight = 3000 * index;
+        const fadeHeight = 800;
         const maxFadeOutHeight = revealHeight + fadeHeight * 2;
 
         // Calculate opacity for fade-in
@@ -62,6 +62,7 @@ const OpacityScroll = () => {
   return (
     <div className="sign-in-text-container">
   
+        <div className="sign-in-text"></div>
         <div className="sign-in-text">Chuck Shuldiner</div>
         <div className="sign-in-text" id="chuck">
             <img src={chuck2} alt="chuck2" />
@@ -76,7 +77,7 @@ const OpacityScroll = () => {
         <div className="sign-in-text" id="chuck">
             <img src={chuck0} alt="chuck0" />
         </div> 
-        <div className="sign-in-text">He has been exploring nature of life and death</div>
+        <div className="sign-in-text">He has been exploring the nature of life and death</div>
         <div className="sign-in-text">And he was a good man</div>
         <div className="sign-in-text">But his work cursed him...</div>
         <div className="sign-in-text" id="cancer">
@@ -115,7 +116,7 @@ const OpacityScroll = () => {
         <div className="sign-in-text" id="brain">
             <img src={brain2} alt="brain2" />
         </div>    
-        <div className="sign-in-text">Pass through all Seven Dimensions of Death</div>
+        <div className="sign-in-text">Pass through all Seven Dimensions of death</div>
 
         <div className="sign-in-text" id="dimensions">
             <img src={dimensions2} alt="dimensions2" />
@@ -128,7 +129,6 @@ const OpacityScroll = () => {
         </div> 
 
         <div className="sign-in-text">Death Itself</div>
-        <div className="sign-in-text"></div>
         <div className="sign-in-text"></div>
         
         <div className="sign-in-text" id="death_eyes">

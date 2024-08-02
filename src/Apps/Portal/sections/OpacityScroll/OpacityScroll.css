@@ -3,7 +3,7 @@ body {
 }
 .sign-in-text-container {
 margin: 0;
-height: 300000px; /* Adjust for desired scrolling distance */
+height: 105000px; /* Adjust for desired scrolling distance */
 background-color: #000000;
 display: flex;
 justify-content: center;
@@ -29,7 +29,6 @@ overflow: hidden;
     overflow: visible; /* Allows text to extend outside without scrollbars */
     white-space: nowrap; /* Prevents text from wrapping */
 }
-
 #death_eyes img {
     width: 100%;
 }
@@ -48,3 +47,46 @@ overflow: hidden;
     height: 100%;
 }
 
+@media (max-width: 500px) {
+    .sign-in-text {
+        font-size: 30px;
+    }
+    #death_eyes img {
+        height: auto;
+        width: 100%;
+    }
+    #cancer img {
+        height: auto;
+        width: 100%;
+    }
+    #dimensions img {
+        height: auto;
+        width: 100%;
+    }
+    #brain img {
+        height: 100%;
+    }
+    #chuck img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    width: 0px; /* for vertical scrollbar */
+    height: 0px; /* for horizontal scrollbar */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
