@@ -21,41 +21,42 @@ import brain2 from './brain2.jpg'
 import death_eyes from './death_eyes.jpg'
 
 const OpacityScroll = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const signs = document.querySelectorAll('.sign-in-text');
-      let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-      signs.forEach((sign, index) => {
-        const revealHeight = 8000 * index;
-        const fadeHeight = 3000;
-        const maxFadeOutHeight = revealHeight + fadeHeight * 2;
-
-        // Calculate opacity for fade-in
-        let opacity = Math.min(1, (scrollPosition - revealHeight) / fadeHeight);
-        opacity = Math.max(0, opacity);
-
-        // Calculate opacity for fade-out
-        if (scrollPosition >= maxFadeOutHeight) {
-          opacity = 1 - Math.min(1, (scrollPosition - maxFadeOutHeight) / fadeHeight);
-        }
-
-        // Calculate font size (increasing continuously)
-        const minFontSize = 12;
-        const maxFontSize = 50;
-        let fontSize = minFontSize + (scrollPosition - revealHeight) / 100; // Adjust divisor for speed
-
-        sign.style.opacity = opacity.toString();
-        sign.style.fontSize = fontSize + 'px';
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    useEffect(() => {
+      const handleScroll = () => {
+        const signs = document.querySelectorAll('.sign-in-text');
+        let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  
+        signs.forEach((sign, index) => {
+          const revealHeight = 8000 * index;
+          const fadeHeight = 3000;
+          const maxFadeOutHeight = revealHeight + fadeHeight * 2;
+  
+          // Calculate opacity for fade-in
+          let opacity = Math.min(1, (scrollPosition - revealHeight) / fadeHeight);
+          opacity = Math.max(0, opacity);
+  
+          // Calculate opacity for fade-out
+          if (scrollPosition >= maxFadeOutHeight) {
+            opacity = 1 - Math.min(1, (scrollPosition - maxFadeOutHeight) / fadeHeight);
+          }
+  
+          // **Remove unused variable maxFontSize**
+          // const minFontSize = 12;
+          // const maxFontSize = 50; // This variable was unused
+  
+          let fontSize = minFontSize + (scrollPosition - revealHeight) / 100; // Adjust divisor for speed
+  
+          sign.style.opacity = opacity.toString();
+          sign.style.fontSize = fontSize + 'px';
+        });
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
   return (
     <div className="sign-in-text-container">
