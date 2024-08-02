@@ -42,10 +42,8 @@ const Portal = () => {
     };
 
     return () => {
-      // Remove event listener on unmount to prevent memory leaks
-      portalRef.current.removeEventListener('wheel', (event) => {
-        event.preventDefault();
-      });
+      // Correctly remove event listener on unmount to prevent memory leaks
+      portalRef.current.removeEventListener('wheel');
     };
   }, []);
 
