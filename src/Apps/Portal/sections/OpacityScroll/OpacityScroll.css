@@ -50,10 +50,12 @@ overflow: hidden;
 @media (max-width: 500px) {
     .sign-in-text {
         font-size: 30px;
+        white-space: wrap; 
+
     }
+    
     #death_eyes img {
-        height: auto;
-        width: 100%;
+        height: 100%;
     }
     #cancer img {
         height: auto;
