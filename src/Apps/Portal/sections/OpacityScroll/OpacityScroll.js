@@ -1,6 +1,5 @@
 
 
-import death_eyes from './death_eyes.jpg'
 
 import React, { useEffect } from 'react';
 import './OpacityScroll.css';
