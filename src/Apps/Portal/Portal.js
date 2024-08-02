@@ -8,28 +8,7 @@ const Portal = () => {
 
   useEffect(() => {
 
-    // Custom smooth scroll function (without upward scroll)
-    const scrollToBottom = (elementId, duration) => {
-      const targetElement = document.getElementById(elementId);
-      if (!targetElement) return;
-
-      let start = null;
-      const animateScroll = () => {
-        if (start === null) start = Date.now();
-        const timeElapsed = Date.now() - start;
-        const distanceToScroll = targetElement.scrollHeight - targetElement.offsetHeight;
-
-        // Calculate scroll step, preventing upward scroll
-        const scrollStep = Math.max(Math.min(distanceToScroll / duration * timeElapsed, distanceToScroll), 0);
-
-        const newScrollTop = Math.min(targetElement.scrollTop + scrollStep, distanceToScroll);
-        window.scrollTo(0, newScrollTop);
-
-        if (newScrollTop < distanceToScroll) requestAnimationFrame(animateScroll);
-      };
-      animateScroll();
-    };
-
+    // Removed unused scrollToBottom function
 
   }, []);
 
