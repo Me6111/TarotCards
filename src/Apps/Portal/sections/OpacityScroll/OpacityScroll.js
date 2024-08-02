@@ -1,22 +1,4 @@
-import React, { useEffect } from 'react';
-import './OpacityScroll.css';
 
-import chuck2 from './chuck2.jpg';
-import chuck1 from './chuck1.jpg';
-import chuck0 from './chuck0.jpg';
-
-import cancer0 from './cancer0.jpg';
-import cancer1 from './cancer1.jpg';
-import cancer2 from './cancer2.jpg';
-import cancer3 from './cancer3.jpg';
-import cancer4 from './cancer4.jpg';
-
-import dimensions1 from './dimensions1.jpg'
-import dimensions2 from './dimensions2.jpg'
-import dimensions3 from './dimensions3.jpg'
-
-import brain1 from './brain1.jpg'
-import brain2 from './brain2.jpg'
 
 import death_eyes from './death_eyes.jpg'
 
