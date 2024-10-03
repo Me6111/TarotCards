@@ -32,7 +32,7 @@ const MainMenuSet = () => {
       <div className='MainMenu' style={{ transition: 'left 1s ease', left: `${isMainMenuVisible ? '0' : '-100%'}` }}>
         <MainMenu />
       </div>
-      <div ref={curtainRef} className='mainMenuCurtain' style={{ transition: 'left 1s ease', left: `${isMainMenuVisible ? '-800px' : '-200%'}` }} onClick={handleCurtainClick}>
+      <div ref={curtainRef} className='mainMenuCurtain' style={{ transition: 'left 1s ease', left: `${isMainMenuVisible ? '0' : '-100%'}` }} onClick={handleCurtainClick}>
       </div>
     </div>
   );
