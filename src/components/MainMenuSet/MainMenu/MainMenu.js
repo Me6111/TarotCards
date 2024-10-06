@@ -1,3 +1,8 @@
+
+
+// C:\Users\user\Desktop\projects\project-manager\src\components\MainMenuSet\MainMenu/MainMenu.js
+
+
 import React from 'react';
 import './MainMenu.css';
 
@@ -15,24 +20,24 @@ const MainMenu = () => {
       </div>
 
       <div className="main-menu-options">
-        <div className="main-menu-option">
+        <button className="main-menu-option">
           <div className="sign">Plot</div>
-        </div>
-        <div className="main-menu-option">
+        </button>
+        <button className="main-menu-option">
           <div className="sign">Levels</div>
-        </div>
-        <div className="main-menu-option">
+        </button>
+        <button className="main-menu-option">
           <div className="sign">Characters</div>
-        </div>
-        <div className="main-menu-option">
+        </button>
+        <button className="main-menu-option">
           <div className="sign">Enemies</div>
-        </div>
-        <div className="main-menu-option">
+        </button>
+        <button className="main-menu-option">
           <div className="sign">Final Boss</div>
-        </div>
-        <div className="main-menu-option">
+        </button>
+        <button className="main-menu-option">
           <div className="sign">Founders</div>
-        </div>
+        </button>
       </div>
     </div>
   );

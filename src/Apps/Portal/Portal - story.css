@@ -214,8 +214,22 @@ body {
 
 
 
-.icon-container {
-    position: sticky;
-    top: 0; /* Adjust this value as needed */
-    right: 0; /* Adjust this value as needed */
-}
+
+
+
+
+
+
+
+
+
+
+/* Hide scrollbar */
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
