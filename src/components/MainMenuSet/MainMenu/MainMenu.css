@@ -16,18 +16,21 @@
     top: 25px; /* Adjust this value as needed */
     left: 15px; /* Adjust this value as needed */
 
-    height: 35px;
+    width: auto;
     height: 70px;
-
-    width: 35px;
-    height: 70px;
-
-
 }
+
+
+.MainMenu-icon-container {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 .MainMenu-icon-container img {
 
     height: 100%;
-    object-fit: contain; 
 }
 
 #logo-icon-container {
