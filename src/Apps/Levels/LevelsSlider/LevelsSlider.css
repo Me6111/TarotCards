@@ -72,8 +72,6 @@
         width: 300px;
         display: block;
 
-    }
-    .slider-field {
         left: 50%;
         transform: translateX(-50%);
         margin: 10px;
