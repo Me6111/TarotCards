@@ -14,8 +14,6 @@ import AlbumCover_5 from './albums covers/5.Individual thought patterns.jpg';
 import AlbumCover_6 from './albums covers/6.Symbolic.jpg';
 import AlbumCover_7 from './albums covers/7.The sound of perseverance.jpg';
 
-import { useNavigate } from 'react-router-dom';
-
 const LevelsSlider = () => {
   return (
     <div className="slider">
