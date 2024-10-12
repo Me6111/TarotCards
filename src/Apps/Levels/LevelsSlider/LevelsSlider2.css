@@ -12,14 +12,14 @@
 
 
 .field-top {
-  left: 0;
+  left: 50px;
   right: auto;
   background-image: linear-gradient(to right, black, transparent);
 
 }
 
 .field-bottom {
-  right: 0;
+  right: 50px;
   left: auto;
   background-image: linear-gradient(to left, black, transparent);
 

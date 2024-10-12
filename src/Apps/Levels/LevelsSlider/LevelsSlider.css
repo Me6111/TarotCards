@@ -22,8 +22,7 @@
 
 
 .slider {
-    position: relative;
-    overflow-x:hidden;
+    overflow-x: hidden;
     z-index: 1;
     width: 600px;
 }
@@ -39,7 +38,12 @@
     padding-bottom: 200px;
     left: 50px;
 }
-
+.slider-fields > :nth-child(1) {
+    margin-left: 100px;
+}
+.slider-fields > :last-child {
+    margin-right: 100px;
+}
 .slider-field {
     width: 200px;
     height: 300px;
