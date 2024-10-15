@@ -12,19 +12,19 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
     setIsActive(true);
   };
 
-  const handleLevelsSliderClick = (event) => {
-    if (!event.target.closest(`#slider-field-${title.split(' ').join('_')}`)) {
-      setIsActive(false);
-    }
-  };
-
   useEffect(() => {
     const levelsSlider = document.querySelector('.LevelsSlider');
+    const handleLevelsSliderClick = (event) => {
+      if (!event.target.closest(`#slider-field-${title.split(' ').join('_')}`)) {
+        setIsActive(false);
+      }
+    };
+    
     levelsSlider.addEventListener('click', handleLevelsSliderClick);
     return () => {
       levelsSlider.removeEventListener('click', handleLevelsSliderClick);
     };
-  }, [handleLevelsSliderClick]);
+  }, []);
 
   return (
     <div
@@ -44,7 +44,6 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
 };
 
 export default SliderField;
-
 
 
 
