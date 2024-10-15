@@ -23,8 +23,11 @@
 
 .slider {
     overflow-x: hidden;
+
     z-index: 1;
     width: 600px;
+    position: absolute;
+    top:0;
 }
 
 .slider-fields {
@@ -34,7 +37,7 @@
     padding: 35px;
     position: relative;
 
-    padding-top: 200px;
+    padding-top: 60px;
     padding-bottom: 200px;
     left: 50px;
 }
@@ -80,25 +83,70 @@
     cursor: pointer;
     z-index: 4;
 }
+.slider-field:hover .slider-field-title {
+    bottom: -25px;
+}
+
+
+
+.slider-field.active .slider-field-inner2 {
+    border: 2px solid white;
+    opacity: 1;
+    width: 120%;
+    height: 120%;
+    cursor: pointer;
+    z-index: 4;
+  }
+  
+  .slider-field.active .slider-field-title {
+    bottom: -25px;
+  }
 
 
 
 
+#appContainer_Levels {
+    height: 100vh;
+    overflow: auto;
+    
+}
 
+.levelInfoField {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    left: 0;
+    /*top: 900px;*/
+    top: 900px;
+    top: 200px;
+    right: 0;
+}
 
+.levelInfoField1 {
+    z-index: 1;
+    position: relative;
+    background-color: green;
+    top: 425px;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.levelInfoField-curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.levelInfoField-curtain:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 
 

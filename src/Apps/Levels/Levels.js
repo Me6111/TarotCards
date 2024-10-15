@@ -28,6 +28,11 @@ const Levels = () => {
         <LevelsSlider />
       </div>
 
+      <div className="levelInfoField">
+        <div className="levelInfoField1"></div>
+        <div className="levelInfoField-curtain"></div>
+
+      </div>
 
     </div>
   );

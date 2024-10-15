@@ -50,8 +50,12 @@
 }
 
 #inner1-Human {
-    width: 220%;
-    height: 220%;
+    width: 470%;
+    height: 470%;
+
+    object-fit: contain;
+    top: -240px;
+    left: -55px;
 }
 
 #inner1-Individual_thought_patterns {
