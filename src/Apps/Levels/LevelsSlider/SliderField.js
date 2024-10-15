@@ -24,7 +24,7 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
     return () => {
       levelsSlider.removeEventListener('click', handleLevelsSliderClick);
     };
-  }, []);
+  }, [title]);
 
   return (
     <div
