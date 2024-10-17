@@ -55,7 +55,7 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
         sliderFieldElement.classList.remove('selected');
       }
     }
-  }, [isActive, selectedLevel]);
+  }, [isActive, selectedLevel, title]); // Add 'title' to the dependency array
 
   return (
     <div
