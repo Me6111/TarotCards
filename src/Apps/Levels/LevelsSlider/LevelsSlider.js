@@ -1,13 +1,16 @@
 // C:\Users\user\Desktop\projects\project-manager\src\Apps\Levels\LevelsSlider\LevelsSlider.js
 
-// LevelsSlider.js
+
+
+// C:\Users\user\Desktop\projects\project-manager\src\Apps\Levels\LevelsSlider\LevelsSlider.js
 
 import React from 'react';
+import { connect } from 'react-redux';
+
 import './LevelsSlider.css';
 import './LevelsSlider2.css';
 import './slider-field-inner-img.css';
 import SliderField from './SliderField';
-
 
 import AlbumCover_1 from './albums covers/1.Scream bloody gore.jpg';
 import AlbumCover_2 from './albums covers/2.Leprosy.jpg';
@@ -18,8 +21,7 @@ import AlbumCover_5 from './albums covers/5.Individual thought patterns.jpg';
 import AlbumCover_6 from './albums covers/6.Symbolic.jpg';
 import AlbumCover_7 from './albums covers/7.The sound of perseverance.jpg';
 
-
-const LevelsSlider = () => {
+const LevelsSlider = ({ selectedLevel, selectLevel }) => {
   const albums = [
     { imgInner1: AlbumCover_1, imgInner2: AlbumCover_1, title: "Scream bloody gore" },
     { imgInner1: AlbumCover_2, imgInner2: AlbumCover_2, title: "Leprosy" },
@@ -30,12 +32,23 @@ const LevelsSlider = () => {
     { imgInner1: AlbumCover_7, imgInner2: AlbumCover_7, title: "The sound of perseverance" },
   ];
 
+  const handleLevelClick = (levelIndex) => {
+    console.log(`Clicked SliderField ID: ${levelIndex}`);
+    selectLevel(levelIndex);
+  };
+
   return (
     <div className="slider">
       <div className="field-top"></div>
       <div className="slider-fields">
         {albums.map((album, index) => (
-          <SliderField key={index} imgInner1={album.imgInner1} imgInner2={album.imgInner2} title={album.title} />
+          <SliderField
+            key={index}
+            imgInner1={album.imgInner1}
+            imgInner2={album.imgInner2}
+            title={album.title}
+            onClick={() => handleLevelClick(index)}
+          />
         ))}
       </div>
       <div className="field-bottom"></div>
@@ -43,4 +56,12 @@ const LevelsSlider = () => {
   );
 };
 
-export default LevelsSlider;
+const mapStateToProps = (state) => ({
+  selectedLevel: state.selectedLevel,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  selectLevel: (levelIndex) => dispatch({ type: 'SELECT_LEVEL', payload: levelIndex }),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LevelsSlider);

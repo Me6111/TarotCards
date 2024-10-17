@@ -111,42 +111,7 @@
     
 }
 
-.levelInfoField {
-    z-index: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow-y: auto;
-    left: 0;
-    /*top: 900px;*/
-    top: 900px;
-    top: 200px;
-    right: 0;
-}
 
-.levelInfoField1 {
-    z-index: 1;
-    position: relative;
-    background-color: green;
-    top: 425px;
-    left: 0;
-    right: 0;
-    height: 2000px;
-    width: 100%;
-}
-
-.levelInfoField-curtain {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.levelInfoField-curtain:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
 
 

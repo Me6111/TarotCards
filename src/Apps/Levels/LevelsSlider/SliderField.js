@@ -4,12 +4,18 @@
 
 
 import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 const SliderField = ({ imgInner1, imgInner2, title }) => {
   const [isActive, setIsActive] = useState(false);
+  const dispatch = useDispatch();
+  const selectedLevel = useSelector(state => state.selectedLevel);
+  const sliderFieldisActive = useSelector(state => state.sliderFieldisActive);
 
   const handleSliderFieldClick = () => {
-    setIsActive(true);
+    setIsActive(!isActive);
+    dispatch({ type: 'SELECT_LEVEL', payload: title });
+    dispatch({ type: 'sliderFieldisActive', payload: !sliderFieldisActive });
   };
 
   useEffect(() => {
@@ -25,6 +31,37 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
       levelsSlider.removeEventListener('click', handleLevelsSliderClick);
     };
   }, [title]);
+
+
+
+  useEffect(() => {
+    const levelInfoFieldCurtain = document.querySelector('.LevelInfoField-curtain');
+  
+    const handleLevelInfoFieldCurtainClick = (event) => {
+      if (event.target === levelInfoFieldCurtain) {
+        setIsActive(false);
+        dispatch({ type: 'SELECT_LEVEL', payload: null }); // Dispatch action to update selectedLevel
+      }
+    };
+  
+    levelInfoFieldCurtain.addEventListener('click', handleLevelInfoFieldCurtainClick);
+  
+    return () => {
+      levelInfoFieldCurtain.removeEventListener('click', handleLevelInfoFieldCurtainClick);
+    };
+  }, [dispatch]); // Add dispatch as a dependency
+
+
+
+  useEffect(() => {
+    if (!isActive && !selectedLevel) {
+      const sliderFieldElement = document.getElementById(`slider-field-${title.split(' ').join('_')}`);
+      if (sliderFieldElement) {
+        sliderFieldElement.classList.remove('active');
+        sliderFieldElement.classList.remove('selected');
+      }
+    }
+  }, [isActive, selectedLevel]);
 
   return (
     <div
@@ -45,26 +82,3 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
 
 export default SliderField;
 
-
-
-/*
-
-import React from 'react';
-
-const SliderField = ({ imgInner1, imgInner2, title }) => {
-  return (
-    <div className="slider-field" id={`slider-field-${title.split(' ').join('_')}`}>
-      <div className="slider-field-inner1" >
-      <img src={imgInner1} alt={title} id={`inner1-${title.split(' ').join('_')}`} />
-      </div>
-      <div className="slider-field-inner2">
-        <img src={imgInner2} alt={title} />
-        <div className="slider-field-title">{title}</div>
-      </div>
-    </div>
-  );
-};
-
-export default SliderField;
-
-*/
