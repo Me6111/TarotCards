@@ -5,7 +5,6 @@ import './LevelInfoField.css';
 
 const LevelInfoField = () => {
     const selectedLevel = useSelector(state => state.selectedLevel);
-    const sliderFieldisActive = useSelector(state => state.sliderFieldisActive);
     const dispatch = useDispatch();
     const curtainRef = useRef(null);
 
