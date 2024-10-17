@@ -32,8 +32,6 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
     };
   }, [title]);
 
-
-
   useEffect(() => {
     const levelInfoFieldCurtain = document.querySelector('.LevelInfoField-curtain');
   
@@ -50,8 +48,6 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
       levelInfoFieldCurtain.removeEventListener('click', handleLevelInfoFieldCurtainClick);
     };
   }, [dispatch]); // Add dispatch as a dependency
-
-
 
   useEffect(() => {
     if (!isActive && !selectedLevel) {
@@ -81,4 +77,3 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
 };
 
 export default SliderField;
-
