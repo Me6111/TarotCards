@@ -10,12 +10,10 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
   const [isActive, setIsActive] = useState(false);
   const dispatch = useDispatch();
   const selectedLevel = useSelector(state => state.selectedLevel);
-  const sliderFieldisActive = useSelector(state => state.sliderFieldisActive);
 
   const handleSliderFieldClick = () => {
     setIsActive(!isActive);
     dispatch({ type: 'SELECT_LEVEL', payload: title });
-    dispatch({ type: 'sliderFieldisActive', payload: !sliderFieldisActive });
   };
 
   useEffect(() => {
@@ -38,7 +36,7 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
     const handleLevelInfoFieldCurtainClick = (event) => {
       if (event.target === levelInfoFieldCurtain) {
         setIsActive(false);
-        dispatch({ type: 'SELECT_LEVEL', payload: null }); // Dispatch action to update selectedLevel
+        dispatch({ type: 'SELECT_LEVEL', payload: null });
       }
     };
   
@@ -47,7 +45,7 @@ const SliderField = ({ imgInner1, imgInner2, title }) => {
     return () => {
       levelInfoFieldCurtain.removeEventListener('click', handleLevelInfoFieldCurtainClick);
     };
-  }, [dispatch]); // Add dispatch as a dependency
+  }, [dispatch]);
 
   useEffect(() => {
     if (!isActive && !selectedLevel) {

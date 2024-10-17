@@ -15,7 +15,7 @@ const LevelInfoField = () => {
                 const levelInfoField = curtainRef.current.parentElement;
                 levelInfoField.classList.remove('selected');
                 dispatch({ type: 'SET_SELECTED_LEVEL', payload: null });
-                dispatch({ type: 'TOGGLE_ACTIVE', payload: false }); // Set sliderFieldisActive to false
+                dispatch({ type: 'TOGGLE_ACTIVE', payload: false });
             });
         }
     }, [dispatch]);
