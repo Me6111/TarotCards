@@ -27,12 +27,18 @@
     z-index: 1;
     position: relative;
     background-color: green;
+
     top: 425px;
     left: 0;
     right: 0;
     height: 2000px;
     width: 100%;
 }
+@media (max-width: 400px) {
+    .LevelInfoField1 {
+      background-color: blue !important;
+    }
+  }
 
 .LevelInfoField-curtain {
     position: absolute;
