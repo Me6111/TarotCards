@@ -34,7 +34,7 @@
     height: 2000px;
     width: 100%;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .LevelInfoField1 {
       background-color: blue !important;
     }
