@@ -96,11 +96,11 @@
     height: 120%;
     cursor: pointer;
     z-index: 4;
-  }
+}
   
-  .slider-field.active .slider-field-title {
+.slider-field.active .slider-field-title {
     bottom: -25px;
-  }
+}
 
 
 

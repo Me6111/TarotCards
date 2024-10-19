@@ -11,7 +11,7 @@ import Portal from './Apps/Portal/Portal';
 import Plot from './Apps/Plot/Plot';
 import Levels from './Apps/Levels/Levels';
 
-import './index.css';
+//import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

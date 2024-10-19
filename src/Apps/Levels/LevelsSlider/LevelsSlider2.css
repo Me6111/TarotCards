@@ -28,15 +28,15 @@
 
 
 .slider-field-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    z-index: 0;
-    font-size: large;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 0;
+  font-size: large;
 
-    bottom: 0px;
-    transition: bottom 2s ease-in-out;
+  bottom: 0px;
+  transition: bottom 2s ease-in-out;
 
 }
 
