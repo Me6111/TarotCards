@@ -13,7 +13,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../../REDUXstore/REDUXstore.js';
 
-import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
+//import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
 import MainMenuButton from '../../components/MainMenuButton/MainMenuButton';
 
 import LevelsSlider from './LevelsSlider/LevelsSlider';
