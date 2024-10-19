@@ -13,8 +13,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../../REDUXstore/REDUXstore.js';
 
-//import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
-import MainMenuButton from '../../components/MainMenuButton/MainMenuButton';
+import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
 
 import LevelsSlider from './LevelsSlider/LevelsSlider';
 import LevelInfoField from './LevelInfoField/LevelInfoField';
@@ -25,7 +24,7 @@ const Levels = () => {
   return (
     <Provider store={store}>
       <div id="appContainer_Levels">
-        <MainMenuButton />
+        <MainMenuSet />
         <div className="LevelsSlider">
           <LevelsSlider />
         </div>
