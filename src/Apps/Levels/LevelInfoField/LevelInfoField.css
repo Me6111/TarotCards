@@ -1,6 +1,16 @@
 
 
 
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 .LevelInfoField {
     z-index: 1;
     position: fixed;
@@ -8,7 +18,7 @@
     height: 100%;
     max-width: 100%;
     box-sizing: border-box;
-    overflow-y: auto;
+    overflow: hidden;
     left: 0;
     /*top: 900px;*/
     top: 200px;
@@ -17,6 +27,8 @@
     right: 0;
     transition: top 1s ease-in-out;
 
+    overflow: auto;
+
 }
 .LevelInfoField.selected {
     top: 0;
@@ -24,29 +36,83 @@
 }
 
 .LevelInfoField1 {
-    z-index: 1;
-    position: relative;
-    background-color: green;
+    z-index: 2;
+    position: absolute;
 
     top: 425px;
     left: 0;
     right: 0;
     height: 2000px;
     width: 100%;
-}
-@media (max-width: 1400px) {
-    .LevelInfoField1 {
-      background-color: blue !important;
-    }
+
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 .LevelInfoField-curtain {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.LevelInfoField-curtainIMGs {
+    width: 100%;
     height: 100%;
+
+    position: absolute;
+    top: 0;
+}
+.LevelInfoField-curtainIMGs {
+    transition: top 1s ease-in-out;
+}
+.LevelInfoField-curtain:hover #curtainIMG1 {
+    top: 600px;
+}
+.LevelInfoField-curtain:hover #curtainIMG2 {
+    top: 425px;
 }
 .LevelInfoField-curtain:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+#curtainIMG1 {
+    top: 0;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: top 1s ease-in-out;
+
+
+}
+#curtainIMG2 {
+    top: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    filter: blur(10px);
+    transition: top 1s ease-in-out;
+}
+
+#curtainIMG1 img {
+    z-index: 1;
+    object-fit: contain;
+}
+#curtainIMG2 img {
+    z-index: 2;
+    object-fit:cover;
+
+}
+
+
+  
