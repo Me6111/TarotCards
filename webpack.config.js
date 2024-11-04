@@ -14,16 +14,8 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images/',
-              publicPath: '/images/'
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        use: 'file-loader',
       },
       {
         test: /\.txt$/,
@@ -36,21 +28,19 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-transform-react-jsx']
-          }
-        }
+            plugins: ['@babel/plugin-transform-react-jsx'],
+          },
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
-      }
-    ]
+        use: ['file-loader'],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
-    })
+      template: './public/index.html', // Adjust the path if needed
+    }),
   ],
 };
