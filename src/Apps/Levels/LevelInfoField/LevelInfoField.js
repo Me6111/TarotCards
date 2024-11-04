@@ -4,16 +4,8 @@ import Leprosy_COVER from './2.Leprosy.jpg';
 import LevelInfoFieldSlider from './LevelInfoFieldSlider';
 import './LevelInfoField.css';
 
-let locationPhotos = [];
-let lepperVillage = [];
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((key) => {
-    images[key] = r(key);
-  });
-  return images;
-}
+
 
 const LevelInfoField = () => {
   const selectedLevel = useSelector(state => state.selectedLevel);
@@ -21,12 +13,6 @@ const LevelInfoField = () => {
   const curtainRef = useRef(null);
 
   useEffect(() => {
-    importAll(require.context('./locationMain', false, /\.(png|jpe?g|svg)$/));
-    locationPhotos = Object.values(importAll(require.context('./locationMain', false, /\.(png|jpe?g|svg)$/)));
-
-    importAll(require.context('./lepperVillage', false, /\.(png|jpe?g|svg)$/));
-    lepperVillage = Object.values(importAll(require.context('./lepperVillage', false, /\.(png|jpe?g|svg)$/))); 
-
     if (curtainRef.current) {
       curtainRef.current.addEventListener('click', () => {
         const levelInfoField = curtainRef.current.parentElement;
@@ -64,14 +50,12 @@ const LevelInfoField = () => {
                 I felt as if I was walking on the bottom of a deep festering wound.
             </div>
 
-            <LevelInfoFieldSlider photoSources={locationPhotos} />
 
             <div className="LevelInfoField-describtion">
                 High atop the city walls could be seen.
                 Here in the bottom there are only crumbling, makeshift huts and shacks built from rubbish.
             </div>
 
-            <LevelInfoFieldSlider photoSources={lepperVillage} />
 
             <div className="LevelInfoField-describtion">
                 High atop the city walls could be seen.
