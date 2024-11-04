@@ -1,0 +1,92 @@
+.field-top,
+.field-bottom {
+  top: 0;
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+
+}    
+
+
+
+.field-top {
+  left: 50px;
+  right: auto;
+  background-image: linear-gradient(to right, black, transparent);
+
+}
+
+.field-bottom {
+  right: 75px;
+  left: auto;
+  background-image: linear-gradient(to left, black, transparent);
+
+}
+
+
+
+.slider-field-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 0;
+  font-size: large;
+
+  bottom: 0px;
+  transition: bottom 2s ease-in-out;
+
+}
+
+.slider-field:hover .slider-field-title {
+  bottom: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+@media screen and (max-width: 650px) {
+
+
+  .field-top,
+  .field-bottom {
+    top: 0;
+    height: 100px;
+    width: 100%;
+  }    
+  
+  .field-top {
+    top: 0;
+    bottom: auto;
+    background-image: linear-gradient(to bottom, black, transparent);
+  
+  }
+  
+  .field-bottom {
+    bottom: 0;
+    top: auto;
+    background-image: linear-gradient(to top, black, transparent);
+  
+  }
+
+}
+
+*/

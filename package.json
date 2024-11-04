@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --mode production && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,6 +41,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-preset-react-app": "^10.0.1",
-    "html-loader": "^5.0.0"
+    "html-loader": "^5.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
   }
 }

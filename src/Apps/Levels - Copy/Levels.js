@@ -14,8 +14,6 @@ import { Provider } from 'react-redux';
 import store from '../../REDUXstore/REDUXstore.js';
 
 import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
-import AppDescription from '../../components/AppDescription/AppDescription';
-
 
 import LevelsSlider from './LevelsSlider/LevelsSlider';
 import LevelInfoField from './LevelInfoField/LevelInfoField';
@@ -27,13 +25,10 @@ const Levels = () => {
     <Provider store={store}>
       <div id="appContainer_Levels">
         <MainMenuSet />
-        <div className="AppContent">
-          <AppDescription />
-          <div className="LevelsSlider">
-            <LevelsSlider />
-          </div>
-          <LevelInfoField />
+        <div className="LevelsSlider">
+          <LevelsSlider />
         </div>
+        <LevelInfoField />
       </div>
     </Provider>
   );
