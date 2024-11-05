@@ -1,16 +1,11 @@
 
 
 
-import React, { useEffect, useRef } from 'react';
 import './AppContent.css';
 
 
 const AppContent = () => {
-  const ElementToRef = useRef(null); 
-  useEffect(() => {
 
-
-  }, []);
 
   return (
     <div ref={ElementToRef} className="AppContent">
