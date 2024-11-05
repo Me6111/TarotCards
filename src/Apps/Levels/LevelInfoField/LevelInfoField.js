@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Leprosy_COVER from './2.Leprosy.jpg';
-import LevelInfoFieldSlider from './LevelInfoFieldSlider';
+//import LevelInfoFieldSlider from './LevelInfoFieldSlider';
 import './LevelInfoField.css';
 
 
