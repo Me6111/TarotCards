@@ -1,3 +1,5 @@
+// src/Apps/Plot/AppContent.js
+
 import React, { useState, useEffect } from 'react';
 import './AppContent.css';
 

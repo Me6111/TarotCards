@@ -1,12 +1,19 @@
+// src/Apps/Portal/AppContent.js
+
 import React, { useState, useEffect } from 'react';
+import './AppContent.css';
 
 const AppContent = () => {
+  const [state, setState] = useState(null);
+  useEffect(() => {
+    // Add any side effects here if needed
+  }, []);
 
   return (
     <div className="AppContent">
-      <div className="AppContent_Field">
-        AppContent - Portal
-      </div>
+      <div className="AppContent_Field"></div>
+      <div className="AppContent_Field"></div>
+      <div className="AppContent_Field"></div>
     </div>
   );
 };
