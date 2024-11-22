@@ -3,17 +3,10 @@ import BatPasswordComponent from './BatPasswordComponent/BatPasswordComponent';
 
 const BatAppContent = () => {
 
-  useEffect(() => {
-    if (passwordOk) {
-      console.log('x');
-      // Remove the component from the DOM
-      document.getElementById('BatPasswordComponent').remove();
-    }
-  }, [passwordOk]);
 
   return (
     <div className="BatAppContent">
-      <BatPasswordComponent passwordOk={passwordOk} />
+      <BatPasswordComponent />
     </div>
   );
 };
