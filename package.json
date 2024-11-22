@@ -46,7 +46,6 @@
     "@babel/preset-env": "^7.26.0",
     "babel-preset-react-app": "^10.0.1",
     "html-loader": "^5.0.0",
-    "stream-http": "^3.2.7",
     "stream-browserify": "^3.0.0",
     "util": "^0.12.0",
     "url": "^13.0.0",
