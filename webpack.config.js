@@ -19,7 +19,6 @@ module.exports = {
       "https": require.resolve("https-browserify"),
       "stream": require.resolve("stream-browserify"),
       "util": require.resolve("util/"),
-      "zlib": require.resolve("browserify-zlib"), // Ensure zlib polyfill is included
       "url": require.resolve("url/"),
       "assert": require.resolve("assert/"),
       "fs": false,
@@ -29,9 +28,6 @@ module.exports = {
       "net": false,
       "child_process": false
     }
-  },
-  externals: {
-    "buffer": "commonjs buffer"
   },
   plugins: [
     new webpack.ProvidePlugin({
