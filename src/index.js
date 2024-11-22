@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Portal from './Apps/Portal/Portal';
 import Plot from './Apps/Plot/Plot';
 import Levels from './Apps/Levels/Levels';
+import DarkKnightTarot from './Apps/DarkKnightTarot/DarkKnightTarot';
 
 import './index.css';
 
@@ -20,6 +21,7 @@ root.render(
       <Route path="/" element={<Portal />} />
       <Route path="/plot" element={<Plot />} />
       <Route path="/levels" element={<Levels />} />
+      <Route path="/darkknighttarot" element={<DarkKnightTarot />} />
 
     </Routes>
   </Router>

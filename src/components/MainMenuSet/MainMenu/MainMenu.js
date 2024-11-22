@@ -34,15 +34,12 @@ const MainMenu = () => {
         <button className="main-menu-option" onClick={() => navigate('/levels')}>
           <div className="sign">Levels</div>
         </button>
-        <button className="main-menu-option">
-          <div className="sign">Characters</div>
+
+
+        <button className="main-menu-option" onClick={() => navigate('/darkknighttarot')}>
+          <div className="sign">Dark Knight Tarot</div>
         </button>
-        <button className="main-menu-option">
-          <div className="sign">Enemies</div>
-        </button>
-        <button className="main-menu-option">
-          <div className="sign">Final Boss</div>
-        </button>
+
         <button className="main-menu-option">
           <div className="sign">Founders</div>
         </button>
