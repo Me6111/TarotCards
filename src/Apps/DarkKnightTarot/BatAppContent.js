@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import BatPasswordComponent from './BatPasswordComponent/BatPasswordComponent';
 
 const BatAppContent = () => {
-  const [passwordOk, setPasswordOk] = useState(false);
 
   useEffect(() => {
     if (passwordOk) {
