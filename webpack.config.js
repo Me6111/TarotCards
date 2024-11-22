@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -9,38 +10,35 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/,
-        use: 'file-loader',
-      },
-      {
-        test: /\.txt$/,
-        use: 'raw-loader',
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-transform-react-jsx'],
-          },
-        },
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader'],
-      },
+      // ... other rules
     ],
   },
+  resolve: {
+    fallback: {
+      "http": require.resolve("stream-http"),
+      "https": require.resolve("https-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "util": require.resolve("util/"),
+      "zlib": require.resolve("browserify-zlib"), // Ensure zlib polyfill is included
+      "url": require.resolve("url/"),
+      "assert": require.resolve("assert/"),
+      "fs": false,
+      "path": false,
+      "crypto": false,
+      "tls": false,
+      "net": false,
+      "child_process": false
+    }
+  },
+  externals: {
+    "buffer": "commonjs buffer"
+  },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html', // Adjust the path if needed
+    new webpack.ProvidePlugin({
+      process: 'process/browser',
+      Buffer: ['buffer', 'Buffer'],
+      __filename: 'path',
+      __dirname: 'path',
     }),
   ],
 };
