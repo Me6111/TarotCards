@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react';
-import BatPasswordComponent from './BatPasswordComponent/BatPasswordComponent';
 
-const BatAppContent = () => {
-  useEffect(() => {
-    // Remove the component from the DOM
-    document.getElementById('BatPasswordComponent').remove();
-  }, []);
+const AppContent = () => {
+  useEffect(() => {}, []);
 
   return (
-    <div className="BatAppContent">
-      <BatPasswordComponent />
+    <div className="Portal_AppContent">
+      <div className="Portal_AppContent_Field"></div>
     </div>
   );
 };
 
-export default BatAppContent;
+export default AppContent;
