@@ -46,6 +46,8 @@
     background-color: rgba(0, 0, 0, 0.6);
     background-color: rgba(0, 0, 0, 0.7);
     background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 
 
     overflow: hidden;
@@ -60,8 +62,6 @@
 
 
     border-radius: 15px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .card-content {
@@ -101,9 +101,16 @@
     font-family: 'CustomFont', sans-serif;
 
     margin-left: 8.5px;
+
+
     letter-spacing: 15px;
+    letter-spacing: 10px;
+
+    
     word-spacing: 10px;
+
     font-size: 15px;
+    font-size: 10px;
 
 
     text-transform: uppercase;

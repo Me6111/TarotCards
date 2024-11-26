@@ -23,9 +23,9 @@ import card12 from './BatCardsImages/12_The Hanged Man.jpg';
 import card13 from './BatCardsImages/13_Death.jpg';
 import card14 from './BatCardsImages/14_Temperance.jpg';
 import card15 from './BatCardsImages/15_The Devil.jpg';
-import card16 from './BatCardsImages/16_Tower.jpg';
+import card16 from './BatCardsImages/16_The Tower.jpg';
 import card17 from './BatCardsImages/17_The Star.jpg';
-import card18 from './BatCardsImages/18_Moon.jpg';
+import card18 from './BatCardsImages/18_The Moon.jpg';
 import card19 from './BatCardsImages/19_The Sun.jpg';
 import card20 from './BatCardsImages/20_Judgement.jpg';
 import card21 from './BatCardsImages/21_The World.jpg';
@@ -47,9 +47,9 @@ const dictsList = [
   {imgPath: card13, title: 'Death'},
   {imgPath: card14, title: 'Temperance'},
   {imgPath: card15, title: 'The Devil'},
-  {imgPath: card16, title: 'Tower'},
+  {imgPath: card16, title: 'The Tower'},
   {imgPath: card17, title: 'The Star'},
-  {imgPath: card18, title: 'Moon'},
+  {imgPath: card18, title: 'The Moon'},
   {imgPath: card19, title: 'The Sun'},
   {imgPath: card20, title: 'Judgement'},
   {imgPath: card21, title: 'The World'},
