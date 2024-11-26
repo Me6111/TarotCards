@@ -1,0 +1,30 @@
+
+
+
+.BatSlider {
+    background-color: green;
+    width: 100%;
+    height: 100%;
+
+
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.BatSliderFields {
+    width: 90%;
+
+    overflow-x: auto;
+    white-space: nowrap;
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.BatSliderFields::-webkit-scrollbar {
+    display: none;
+}
+

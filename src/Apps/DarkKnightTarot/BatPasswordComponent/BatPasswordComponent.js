@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import './BatPasswordComponent.css';
 import BatSign from './BatSign.jpg';
 
+import { useDispatch } from 'react-redux'; // Import useDispatch hook
+import { setBatAccess } from '../REDUXstore.js'; // Import action creator
+
 const BatPasswordComponent = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const dispatch = useDispatch(); // Get the dispatch function
+
 
   const handleBlurUsername = () => {
     if (username === 'Javier Ocampo') {
@@ -45,6 +50,7 @@ const BatPasswordComponent = () => {
 
     if (handleBlurUsername() && handleBlurPassword()) {
       console.log('username and password are correct');
+      dispatch(setBatAccess(true));
     }
   };
 
