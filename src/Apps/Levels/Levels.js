@@ -12,7 +12,7 @@ import React from 'react';
 
 import { Provider } from 'react-redux';
 import store from '../../REDUXstore/REDUXstore.js';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 
 import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';

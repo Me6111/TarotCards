@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import store from './REDUXstore';
-import BatPasswordComponent from './BatPasswordComponent/BatPasswordComponent';
+// import BatPasswordComponent from './BatPasswordComponent/BatPasswordComponent';
 import DarkKnightTarotCards from './DarkKnightTarotCards/DarkKnightTarotCards';
 import ReactDOM from 'react-dom'; // Import ReactDOM
 

@@ -1,7 +1,7 @@
 
 
 
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import './DarkKnightTarotCards.css';
 
 import BatSlider from './BatSlider';
