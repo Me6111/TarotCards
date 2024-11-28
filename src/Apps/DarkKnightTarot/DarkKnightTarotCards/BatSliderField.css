@@ -47,6 +47,10 @@
     width: 375px;
     height: 525px;
 
+    width: 300px;
+    height: 460px;
+
+
     padding-top: 15px;
 
     border-radius: 15px;
@@ -102,6 +106,12 @@
 
     font-size: 15px;
     font-size: 10px;
+
+
+    margin-left: 4px;
+    letter-spacing: 8px;
+    word-spacing: 8px;
+    font-size: 8px;
 
 
     text-transform: uppercase;
