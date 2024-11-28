@@ -3,10 +3,10 @@
 
 .BatSliderField {
     background-color: none;
-    width: 400px;
     height: 600px;
     margin: 10px;
-    margin: 0;
+    
+
 
     position: relative;
     display: inline-block;  
