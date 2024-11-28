@@ -17,6 +17,7 @@
 
 .BatSliderFields {
     width: 90%;
+    width: 100%;
 
     overflow-x: auto;
     white-space: nowrap;
