@@ -1,0 +1,117 @@
+{
+    "ImagesDir": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/",
+    "backgroundsDir": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages_backgrounds/",
+    "cardsData":
+    [
+        {
+          "number": "0",
+          "title": "The Fool",
+          "character": "Joker"
+        },
+        {
+          "number": "1",
+          "title": "The Magician",
+          "character": "Batman"
+        },
+        {
+          "number": "2",
+          "title": "The High Priestess",
+          "character": "Talia al Ghul"
+        },
+        {
+          "number": "3",
+          "title": "The Empress",
+          "character": "Rachel Dawes"
+        },
+        {
+          "number": "4",
+          "title": "The Emperor",
+          "character": "James Gordon"
+        },
+        {
+          "number": "5",
+          "title": "The Hierophant",
+          "character": "Alfred Pennyworth"
+        },
+        {
+          "number": "6",
+          "title": "The Lovers",
+          "character": "Harvey and Rachel"
+        },
+        {
+          "number": "7",
+          "title": "The Chariot",
+          "character": "Batmobile"
+        },
+        {
+          "number": "8",
+          "title": "Strength",
+          "character": "Catwoman"
+        },
+        {
+          "number": "9",
+          "title": "The Hermit",
+          "character": "Scarecrow"
+        },
+        {
+          "number": "10",
+          "title": "Wheel of Fortune",
+          "character": "Car chase"
+        },
+        {
+          "number": "11",
+          "title": "Justice",
+          "character": "The Dark Knight"
+        },
+        {
+          "number": "12",
+          "title": "The Hanged Man",
+          "character": "Two-Face"
+        },
+        {
+          "number": "13",
+          "title": "Death",
+          "character": "I broke you"
+        },
+        {
+          "number": "14",
+          "title": "Temperance",
+          "character": "Lucius Fox"
+        },
+        {
+          "number": "15",
+          "title": "The Devil",
+          "character": "Ra's al Ghul"
+        },
+        {
+          "number": "16",
+          "title": "The Tower",
+          "character": "It's about sending message"
+        },
+        {
+          "number": "17",
+          "title": "The Star",
+          "character": "Bat Signal"
+        },
+        {
+          "number": "18",
+          "title": "The Moon",
+          "character": "Gotham City"
+        },
+        {
+          "number": "19",
+          "title": "The Sun",
+          "character": "Batman's sacrifice"
+        },
+        {
+          "number": "20",
+          "title": "Judgment",
+          "character": "Deshi Basara"
+        },
+        {
+          "number": "21",
+          "title": "The World",
+          "character": "I had this fantasy"
+        }
+    ]
+}

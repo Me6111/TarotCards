@@ -1,0 +1,25 @@
+{
+    "0": {"number": "O", "title": "The Fool", "character": "Draco Malfoy"},
+    "1": {"number": "I", "title": "The Magician", "character": "Albus Dumbledore"},
+    "2": {"number": "II", "title": "The High Priestess", "character": "Hermione"},
+    "3": {"number": "III", "title": "The Empress", "character": "Minerva McGonagall"},
+    "4": {"number": "IV", "title": "The Emperor", "character": "Barty Crouch Sr."},
+    "5": {"number": "V", "title": "The Hierophant", "character": "Sirius Black"},
+    "6": {"number": "VI", "title": "The Lovers", "character": "Ron and Hermione"},
+    "7": {"number": "VII", "title": "The Chariot", "character": "Nimbus 2000 Broomstick"},
+    "8": {"number": "VIII", "title": "Strength", "character": "Neville Longbottom"},
+    "9": {"number": "IX", "title": "The Hermit", "character": "Lord Voldemort"},
+    "10": {"number": "X", "title": "Wheel of Fortune", "character": "The prophecy / Sybilda Trellawney"},
+    "11": {"number": "XI", "title": "Justice", "character": "Alastor Moody"},
+    "12": {"number": "XII", "title": "The Hanged Man", "character": "Severus Snape"},
+    "13": {"number": "XIII", "title": "Death", "character": "Horcrux"},
+    "14": {"number": "XIV", "title": "Temperance", "character": "Ron Weasely / Weasley Family / Phoenix Order"},
+    "15": {"number": "XV", "title": "The Devil", "character": "Young Tom Marvolo Riddle"},
+    "16": {"number": "XVI", "title": "The Tower", "character": "Breaking of Azkaban"},
+    "17": {"number": "XVII", "title": "The Star", "character": "Patronus"},
+    "18": {"number": "XVIII", "title": "The Moon", "character": "Remus Lupin"},
+    "19": {"number": "XIX", "title": "The Sun", "character": "Harry Finds the Stone of Resurection"},
+    "20": {"number": "XX", "title": "Judgment", "character": "Harry faces Voldemort in Dark Forest"},
+    "21": {"number": "XXI", "title": "The World", "character": "Quidditch world cup"}
+
+  }

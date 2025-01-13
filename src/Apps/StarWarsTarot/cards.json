@@ -1,0 +1,25 @@
+{
+    "0": {"number": "O", "title": "The Fool", "character": "Luke Skywalker"},
+    "1": {"number": "I", "title": "The Magician", "character": "Master Yoda"},
+    "2": {"number": "II", "title": "The High Priestess", "character": "Padmé Amidala"},
+    "3": {"number": "III", "title": "The Empress", "character": "Princess Leia"},
+    "4": {"number": "IV", "title": "The Emperor", "character": "Governor Tarkin"},
+    "5": {"number": "V", "title": "The Hierophant", "character": "Obi-Wan Kenobi"},
+    "6": {"number": "VI", "title": "The Lovers", "character": "Han Solo and Princess Leia"},
+    "7": {"number": "VII", "title": "The Chariot", "character": "The Millennium Falcon"},
+    "8": {"number": "VIII", "title": "Strength", "character": "Han Solo"},
+    "9": {"number": "IX", "title": "The Hermit", "character": ""},
+    "10": {"number": "X", "title": "Wheel of Fortune", "character": "The Battle of Yavin"},
+    "11": {"number": "XI", "title": "Justice", "character": "Princess Leia leading the Alliance"},
+    "12": {"number": "XII", "title": "The Hanged Man", "character": "Anakin Skywalker"},
+    "13": {"number": "XIII", "title": "Death", "character": "Obi-Wan Kenobi killed by Darth Vader"},
+    "14": {"number": "XIV", "title": "Temperance", "character": "R2-D2 and C-3PO"},
+    "15": {"number": "XV", "title": "The Devil", "character": "Emperor Palpatine"},
+    "16": {"number": "XVI", "title": "The Tower", "character": "Death Star destroys Alderaan"},
+    "17": {"number": "XVII", "title": "The Star", "character": "The plans of Death Star"},
+    "18": {"number": "XVIII", "title": "The Moon", "character": ""},
+    "19": {"number": "XIX", "title": "The Sun", "character": ""},
+    "20": {"number": "XX", "title": "Judgment", "character": ""},
+    "21": {"number": "XXI", "title": "The World", "character": "Conversion of Darth Vader"}
+
+  }

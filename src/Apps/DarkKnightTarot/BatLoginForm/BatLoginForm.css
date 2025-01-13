@@ -1,0 +1,191 @@
+
+
+
+#BatSign_MainField {
+  top: 10px;
+  width: 80vw;
+
+}
+
+
+.BatLoginForm {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  z-index: 1;
+}
+
+#BatSignImg {
+  width: 80%;
+  object-fit: contain;
+}
+
+
+
+
+
+.BatLoginInputs {
+  height: 250px;
+  margin-top: 50px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+}
+
+
+.BatInputField0 {
+  width: 400px;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BatInputField {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  box-shadow: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+
+
+
+
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  letter-spacing: 10px;
+
+  transition: all 0.5s ease-in-out;
+
+}
+
+
+
+.BatInputField:focus {
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 360px;
+  height: 60px;
+  
+  border-radius: 7.5px;
+  letter-spacing: 15px;
+
+}
+
+
+.BatLoginButton0 {
+  width: 250px;
+  height: 35px;
+  margin-top: 20px;
+
+  background-color: rgb(0, 0, 0);
+  border: 2px solid white;
+
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.BatLoginButton {
+  width: 247px;
+  height: 32px;
+  border-radius: 3px;
+
+  border: none;
+  color: white;
+
+  text-align: center;
+
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  letter-spacing: 10px;
+
+  background-color: transparent;
+  
+}
+
+.BatLoginButtonBackground {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+
+  position: relative;
+
+  transition: all 1s ease-in-out;
+
+}
+
+.BatLoginButton0:hover .BatLoginButtonBackground {
+  background-color: black;
+  width: 0;
+}
+
+.BatLoginButton:hover {
+  color: white;
+}
+
+
+.BatLoginButton0 {
+  position: relative;
+
+}
+
+.BatLoginButtonBackground {
+  position: absolute;
+
+  background-color: white;
+}
+
+.BatLoginButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

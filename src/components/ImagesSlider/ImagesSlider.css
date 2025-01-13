@@ -1,0 +1,220 @@
+
+
+.ImagesSlider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  
+    overflow: hidden;
+
+}
+
+
+.slider_00 {
+
+
+    position: relative;
+    top: 0%;
+    transition: top 3s ease-in-out;
+
+}
+.slider_00.expanded {
+    transition: top 0.5s ease-in-out;
+    top: -100%;
+}
+
+.slider_0 {
+    z-index: 1;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    max-width: 100vh;
+
+
+    box-sizing: border-box;
+
+
+    overflow: hidden;
+    box-shadow: 
+    0 10px 10px rgba(255, 255, 255, 0.3), /* Bottom blur */
+    0 -10px 10px rgba(255, 255, 255, 0.3); /* Top blur */
+}
+
+
+.BatSliderField {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_1 {
+    z-index: 0;
+    position: absolute;
+    position: fixed;
+
+
+    width: 100%;
+
+
+    overflow: hidden;
+    opacity: 0.8;
+
+
+    box-sizing: border-box;
+
+
+}
+.slider_1 .sliderField_0 img{
+    width: 100%;
+    height: 100%;
+
+
+    object-fit:cover;
+
+    filter: blur(8px);
+    opacity: 0.6;
+
+}
+
+
+.slider_fields {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    transition: transform 1s ease;
+}
+.slider_1 .slider_fields {
+    transition: transform 2s ease;
+}
+
+
+
+
+.sliderField_0 {
+
+    display: inline-block;
+    position: relative;
+
+    width: 100vh;
+    height: 100vh;
+    
+    
+    flex: 0 0 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.sliderField_0_background_0 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+}
+.sliderField_0_background_1 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: top 2s ease-in-out;
+    transition: opacity 3s ease-in-out;
+
+}
+.sliderField_0_background_1.expanded {
+    opacity: 1;
+    transition: opacity 0s ease-in-out;
+}
+
+.sliderField_0 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-fit: contain;
+
+
+}
+
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+* {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none;  /* Firefox 19+ */
+}
+  
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+span.next, span.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: #eee;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 8);
+
+
+}
+span.next{
+    right: 20px;
+}
+span.prev{
+    left: 20px;
+}
+span.next:hover, span.prev:hover{
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+} 
+
+

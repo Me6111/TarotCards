@@ -1,0 +1,145 @@
+{
+    "0": {
+      "number": "O",
+      "title": "The Fool",
+      "character": "Joker",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/0.jpg",
+      "background": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages_backgrounds/0.gif"
+        
+      
+    },
+    "1": {
+      "number": "I",
+      "title": "The Magician",
+      "character": "Batman",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/1.jpg",
+      "background": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages_backgrounds/1.gif"
+
+    },
+    "2": {
+      "number": "II",
+      "title": "The High Priestess",
+      "character": "Talia al Ghul",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/2.jpg",
+      "background": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages_backgrounds/2.gif"
+
+    },
+    "3": {
+      "number": "III",
+      "title": "The Empress",
+      "character": "Rachel Dawes",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/3.jpg",
+      "background": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages_backgrounds/3.gif"
+
+    },
+    "4": {
+      "number": "IV",
+      "title": "The Emperor",
+      "character": "James Gordon",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/4.jpg",
+      "background": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages_backgrounds/4.gif"
+    
+    },
+    "5": {
+      "number": "V",
+      "title": "The Hierophant",
+      "character": "Alfred Pennyworth",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/5.jpg"
+    },
+    "6": {
+      "number": "VI",
+      "title": "The Lovers",
+      "character": "Harvey and Rachel",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/6.jpg"
+    },
+    "7": {
+      "number": "VII",
+      "title": "The Chariot",
+      "character": "Batmobile",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/7.jpg"
+    },
+    "8": {
+      "number": "VIII",
+      "title": "Strength",
+      "character": "Catwoman",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/8.jpg"
+    },
+    "9": {
+      "number": "IX",
+      "title": "The Hermit",
+      "character": "Scarecrow",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/9.jpg"
+    },
+    "10": {
+      "number": "X",
+      "title": "Wheel of Fortune",
+      "character": "Car chase",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/10.jpg"
+    },
+    "11": {
+      "number": "XI",
+      "title": "Justice",
+      "character": "The Dark Knight",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/11.jpg"
+    },
+    "12": {
+      "number": "XII",
+      "title": "The Hanged Man",
+      "character": "Two-Face",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/12.jpg"
+    },
+    "13": {
+      "number": "XIII",
+      "title": "Death",
+      "character": "I broke you",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/13.jpg"
+    },
+    "14": {
+      "number": "XIV",
+      "title": "Temperance",
+      "character": "Lucius Fox",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/14.jpg"
+    },
+    "15": {
+      "number": "XV",
+      "title": "The Devil",
+      "character": "Ra's al Ghul",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/15.jpg"
+    },
+    "16": {
+      "number": "XVI",
+      "title": "The Tower",
+      "character": "It's about sending message",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/16.jpg"
+    },
+    "17": {
+      "number": "XVII",
+      "title": "The Star",
+      "character": "Bat Signal",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/17.jpg"
+    },
+    "18": {
+      "number": "XVIII",
+      "title": "The Moon",
+      "character": "Gotham City",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/18.jpg"
+    },
+    "19": {
+      "number": "XIX",
+      "title": "The Sun",
+      "character": "Batman's sacrifice",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/19.jpg"
+    },
+    "20": {
+      "number": "XX",
+      "title": "Judgment",
+      "character": "Deshi Basara",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/20.jpg"
+    },
+    "21": {
+      "number": "XXI",
+      "title": "The World",
+      "character": "I had this fantasy",
+      "imgPath": "C:/Users/user/Desktop/projects/Death/project-manager/src/Apps/DarkKnightTarot/DarkKnightTarotCards/BAT_LevelsSlider/BatCardsImages/21.jpg"
+    }
+}
