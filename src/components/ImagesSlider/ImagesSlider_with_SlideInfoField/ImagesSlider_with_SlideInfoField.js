@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import './ImagesSlider_with_SlideInfoField.css';
 
 import ImagesSlider from '../ImagesSlider';
-import SliderField_TarotCard from '../SliderField_TarotCard/SliderField_TarotCard';
+//import SliderField_TarotCard from '../SliderField_TarotCard/SliderField_TarotCard';
 import SlideInfoField from '../SlideInfoField/SlideInfoField';
 
 
