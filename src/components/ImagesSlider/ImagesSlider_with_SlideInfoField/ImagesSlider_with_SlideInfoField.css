@@ -12,7 +12,8 @@
     bottom: 0;
 
     overflow-y: auto;
-    border: transparent solid 1px;
+    border-top: transparent solid 1px;
+    border-bottom: transparent solid 1px;
 
 }
 
