@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './SlideInfoField.css';
 
 const SlideInfoField = ({ cards, quotes, descriptions, currentIndex, scrollProps }) => {
@@ -8,10 +9,33 @@ const SlideInfoField = ({ cards, quotes, descriptions, currentIndex, scrollProps
   const quote = quotes[currentIndex];
   const description = descriptions[currentIndex];
 
+  // State to manage the expanded state of SlideInfoField_0001
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Effect to trigger expansion after 3 seconds if both conditions are met
+  useEffect(() => {
+    if (scrollProps.scrollTop > 0) { 
+      const timeoutId = setTimeout(() => {
+        setIsExpanded(true); 
+      }, 2000); 
+
+      return () => clearTimeout(timeoutId); 
+    } else {
+      // Reset isExpanded to false when scrollProps.scrollTop is 0
+      setIsExpanded(false); 
+    }
+  }, [scrollProps.scrollTop]); 
 
   return (
     <div className="SlideInfoField_0">
       <div className={scrollProps.scrollTop > 0 ? "SlideInfoField_1 expanded" : "SlideInfoField_1"}>
+        <div 
+          className={
+            (scrollProps.scrollTop > 0 && isExpanded) 
+              ? "SlideInfoField_0001 expanded" 
+              : "SlideInfoField_0001"
+          }
+        >
         <div className="SlideInfoField_01">
           <div className="SlideInfoField_011">
             <img src={imgPath} />
@@ -36,6 +60,7 @@ const SlideInfoField = ({ cards, quotes, descriptions, currentIndex, scrollProps
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

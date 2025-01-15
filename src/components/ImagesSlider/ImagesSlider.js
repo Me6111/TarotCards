@@ -28,6 +28,7 @@ const ImagesSlider = ({ slidesData, SliderField, currentIndex, setCurrentIndex, 
       <div className="slider_0">
 
         <div className={scrollProps.scrollTop > 0 ? "slider_00 expanded" : "slider_00"}>
+          
 
           <div className="slider_fields" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
             {slidesData.map((item) => (
