@@ -44,8 +44,6 @@
 
 .SlideInfoField_01 {
     background-color: black;
-    /*box-shadow: 0 0.5px 10px rgba(255, 255, 255);*/
-    border-bottom: rgba(255, 255, 255, 0.4) solid 1px;
     border-top: rgba(255, 255, 255, 0.4) solid 1px;
 
     position: relative;
@@ -87,10 +85,6 @@
     width: 100vw; 
     width: 70vw; 
 
-    display: flex;
-    justify-content: center;
-    object-fit: contain;   
-
     border: white 1px solid;
 }
 .SlideInfoField_012 img{
@@ -116,14 +110,13 @@
     background-color: rgba(0, 0, 0, 0.5);
 
     font-size: 50px;
-    height: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: auto;
     width: 100%;
     position: relative;
     z-index: 1;
 
     display: flex;
+    align-items: center;
     flex-direction: row;
     color: rgba(255, 255, 255);
 }
@@ -146,19 +139,15 @@
     1px 1px 0 black;
 }
 
+
 .Card_Title_1 {
     height: 100%;
     width: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
 
-
-}
-.Card_Title_1 {
     
     font-family: 'CustomFont', sans-serif;
-    margin-left: 12px;
     letter-spacing: 24px;
     word-spacing: 24px;
     font-size: 24px;
@@ -166,17 +155,31 @@
     text-transform: uppercase;
     margin-left: 40px;
     
+    font-size: clamp(1rem, 1.3vw, 1.3rem); 
 
+    display: flex;
+    flex-direction: column;
+
+}
+.Card_Title_11 {
+    position: relative;
+    left: 0;
+    margin-bottom: 5px;
+
+}
+.Card_Title_12 {
+    margin-top: 5px;
 }
 @media screen and (max-width: 600px) {
     .BAT_SlideInfoField_02 {
         top: -90px;
     }
     .Card_Title {
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
         padding: 0;
     }
     .Card_Title_0 {
-        font-size: 80px;
         margin-left: 20px;
     }
     .Card_Title_1 {
@@ -184,8 +187,13 @@
         letter-spacing: 12px;
         word-spacing: 12px;
         font-size: 12px;
-
-        
+    }
+    .Card_Title_11 {
+        margin-bottom: 5px;
+    
+    }
+    .Card_Title_12 {
+        margin-top: 5px;
     }
 }
 

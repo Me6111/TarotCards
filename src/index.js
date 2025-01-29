@@ -8,9 +8,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Portal from './Apps/Portal/Portal';
-import Plot from './Apps/Plot/Plot';
-import Levels from './Apps/Levels/Levels';
 import DarkKnightTarotApp from './Apps/DarkKnightTarot/DarkKnightTarotApp';
+import HarryPotterTarotApp from './Apps/HarryPotterTarot/HarryPotterTarotApp';
 
 import './index.css';
 
@@ -19,9 +18,8 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<Portal />} />
-      <Route path="/plot" element={<Plot />} />
-      <Route path="/levels" element={<Levels />} />
-      <Route path="/darkknighttarot" element={<DarkKnightTarotApp />} />
+      <Route path="/darkknight" element={<DarkKnightTarotApp />} />
+      <Route path="/harrypotter" element={<HarryPotterTarotApp />} />
 
     </Routes>
   </Router>

@@ -47,7 +47,12 @@ const SlideInfoField = ({ cards, quotes, descriptions, currentIndex, scrollProps
         <div className="SlideInfoField_02">
           <div className="Card_Title">
             <div className="Card_Title_0">{number}</div>
-            <div className="Card_Title_1">{title}{character && ': '}{character}</div>         
+            <div className="Card_Title_1">
+              <div className="Card_Title_11">{title}{character && ': '}</div>         
+                {character && (
+                  <div className="Card_Title_12">{character}</div>
+                )}
+            </div>         
           </div>
           {quote && (
             <div className="CardMeaning">

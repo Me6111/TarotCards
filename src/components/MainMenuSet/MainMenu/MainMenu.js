@@ -27,21 +27,13 @@ const MainMenu = () => {
 
 
       <div className="main-menu-options">
-        <button className="main-menu-option" onClick={() => navigate('/plot')}>
-          <div className="sign">Plot</div>
+
+        <button className="main-menu-option" onClick={() => navigate('/darkknight')}>
+          <div className="sign">Dark Knight</div>
         </button>
 
-        <button className="main-menu-option" onClick={() => navigate('/levels')}>
-          <div className="sign">Levels</div>
-        </button>
-
-
-        <button className="main-menu-option" onClick={() => navigate('/darkknighttarot')}>
-          <div className="sign">Dark Knight Tarot</div>
-        </button>
-
-        <button className="main-menu-option">
-          <div className="sign">Founders</div>
+        <button className="main-menu-option" onClick={() => navigate('/harrypotter')}>
+          <div className="sign">Harry Potter</div>
         </button>
 
 
