@@ -5,55 +5,50 @@ import hogwartsWindow from './hogwarts window/window4-3.png';
 import clouds from './hogwarts window/clouds2.gif';
 
 const ImagesSlider = () => {
-  const [items, setItems] = useState(['a', 'b']);
+  const [items] = useState(['a', 'b']);
   const [translateX, setTranslateX] = useState(0);
-  const itemWidth = 100;
+  const [direction, setDirection] = useState(null); // Store the direction: 'next' or 'prev'
+  const fullWidth = 100;
 
   const sliderRef = useRef(null);
-  const elementRefs = useRef({}); // Store refs in an object
-
-  useEffect(() => {
-    console.log(items);
-    console.log("Current 2nd element of the list:", items[1]);
-  }, [items]);
+  const elementRefs = useRef({});
 
   const nextSlide = () => {
-    setItems((prevItems) => {
-      const newItem = prevItems.shift();
-      return [...prevItems, newItem];
-    });
-
-    setTranslateX((prevTranslateX) => prevTranslateX - itemWidth);
+    setDirection('next'); // Set direction to 'next'
+    setTranslateX(prevTranslateX => prevTranslateX - fullWidth);
   };
 
   const prevSlide = () => {
-    setItems((prevItems) => {
-      const newItem = prevItems.pop();
-      return [newItem, ...prevItems];
-    });
-
-    setTranslateX((prevTranslateX) => prevTranslateX + itemWidth);
+    setDirection('prev'); // Set direction to 'prev'
+    setTranslateX(prevTranslateX => prevTranslateX + fullWidth);
   };
 
   useEffect(() => {
     if (sliderRef.current) {
       sliderRef.current.style.transform = `translateX(${translateX}%)`;
-      sliderRef.current.style.transition = `transform 2s ease`;
+      sliderRef.current.style.transition = 'transform 3s ease';
     }
   }, [translateX]);
 
   useEffect(() => {
-    
-    const newLeft = (translateX * -1) + itemWidth;
-    console.log('New left value for 2nd element:', newLeft);
-    elementRefs.current[items[1]].style.left = `${newLeft}%`; 
-    elementRefs.current[items[0]].style.left = `${newLeft-100}%`; 
-    
-  }, [translateX, items]);
+    if (direction) { // Only update positions if direction is set
+      const newLeft = (translateX * -1) ;
 
+      elementRefs.current[items[1]].style.left = `${newLeft}%`;
+      if (direction === 'prev') {
+        elementRefs.current[items[0]].style.left = `${newLeft + fullWidth}%`;
+      } else if (direction === 'next') {
+        elementRefs.current[items[0]].style.left = `${newLeft - fullWidth}%`;
+      }
+
+      setDirection(null); // Reset direction after updating positions
+    }
+  }, [translateX, items, direction]); // Add direction to the dependency array
 
   const handleRef = (id) => (el) => {
-    elementRefs.current[id] = el;
+    if (el) {
+      elementRefs.current[id] = el;
+    }
   };
 
   return (
@@ -64,12 +59,10 @@ const ImagesSlider = () => {
           <span className="prev" onClick={prevSlide}>&#10094;</span>
         </div>
       </div>
-
       <div className="tp_slider_1">
         <div className="tp_slider_fieldsBackground">
           <img src={clouds} alt="Background" />
         </div>
-
         <div className="tp_slider_fields">
           <div className="tp_slider_fields_1" ref={sliderRef}>
             {items.map((item, index) => (
@@ -77,11 +70,11 @@ const ImagesSlider = () => {
                 key={item}
                 className="tp_sliderField_0"
                 id={item}
-                ref={handleRef(item)} // Use the ref callback
-                style={{ left: `${index * itemWidth}%` }}
+                ref={handleRef(item)}
+                style={{ left: `${index * fullWidth}%` }} // Initial positions
               >
                 <div className="tp_sliderField_0_background_0">
-                  <img src={hogwartsWindow} alt={`Hogwarts Window ${item}`} />
+                  <img src={hogwartsWindow} alt="Hogwarts Window" />
                 </div>
               </div>
             ))}

@@ -97,8 +97,8 @@
 
 .tp_slider_fields_1 {
     position: relative;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;   
 }
@@ -110,9 +110,9 @@
     z-index: 1;
     display: inline-block;
     position: absolute;
-    width: 50vh;
-    height: 50vh;
-    flex: 0 50 100%;
+    width: 100vh;
+    height: 100vh;
+    flex: 0 0 100%;
     display: flex;
     align-items: center;
     justify-content: center;
