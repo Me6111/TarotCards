@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 
 import './Portal.css';
 import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
-import ImagesSlider from './ImagesSlider';
 
 
 
@@ -14,7 +13,9 @@ const Portal = () => {
     <div ref={ElementToRef} className="appContainer">
       <MainMenuSet />
     
-      <ImagesSlider/>
+      <div className="TitleField">
+        TAROT CARDS
+      </div>
 
 
 
