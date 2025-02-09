@@ -1,31 +1,7 @@
 
 import MainMenuSet from '../../components/MainMenuSet/MainMenuSet';
 import ImagesSlider_with_SlideInfoField from '../../components/ImagesSlider/ImagesSlider_with_SlideInfoField/ImagesSlider_with_SlideInfoField'
-import BatCard from '../../components/ImagesSlider/SliderField_TarotCard/SliderField_TarotCard'
 
-
-import card0 from './Slider/Images/0.gif';
-import card1 from './Slider/Images/1.gif';
-import card2 from './Slider/Images/2.gif';
-import card3 from './Slider/Images/3.gif';
-import card4 from './Slider/Images/4.gif';
-import card5 from './Slider/Images/5.gif';
-import card6 from './Slider/Images/6.gif';
-import card7 from './Slider/Images/7.gif';
-import card8 from './Slider/Images/8.gif';
-import card9 from './Slider/Images/9.gif';
-import card10 from './Slider/Images/10.gif';
-import card11 from './Slider/Images/11.gif';
-import card12 from './Slider/Images/12.gif';
-import card13 from './Slider/Images/13.gif';
-import card14 from './Slider/Images/14.gif';
-import card15 from './Slider/Images/15.gif';
-import card16 from './Slider/Images/16.gif';
-import card17 from './Slider/Images/17.gif';
-import card18 from './Slider/Images/18.gif';
-import card19 from './Slider/Images/19.gif';
-import card20 from './Slider/Images/20.gif';
-import card21 from './Slider/Images/21.gif';
 
 import hogwartsWindow from './window4-3.png';
 
@@ -37,51 +13,42 @@ import descriptions from './Slider/descriptions/descriptions.json';
 
 import './SliderInfoField.css';
 
-const Images = [
-  card0, card1, card2, card3, card4, card5, 
-  card6, card7, card8, card9, card10, card11, 
-  card12, card13, card14, card15, card16, card17, 
-  card18, card19, card20, card21
-];
+import images from './images.json';
 
 
 
 
 const cards = [
-  {number: 'O', title: 'The Fool', character: 'James Potter and the Marauders', imgPath: card0, background: hogwartsWindow},
-  {number: 'I', title: 'The Magician', character: 'Albus Dumbledore', imgPath: card1, background: hogwartsWindow},
-  {number: 'II', title: 'The High Priestess', character: 'Hermione Granger', imgPath: card2, background: hogwartsWindow},
-  {number: 'III', title: 'The Empress', character: 'Minerva McGonagall', imgPath: card3, background: hogwartsWindow},
-  {number: 'IV', title: 'The Emperor', character: 'Barty Crouch Sr.', imgPath: card4, background: hogwartsWindow},
-  {number: 'V', title: 'The Hierophant', character: 'Arthur Weasley', imgPath: card5, background: hogwartsWindow},
-  {number: 'VI', title: 'The Lovers', character: 'Lupin and Tonks', imgPath: card6, background: hogwartsWindow},
-  {number: 'VII', title: 'The Chariot', character: 'Nimbus 2000 Broomstick', imgPath: card7, background: hogwartsWindow},
-  {number: 'VIII', title: 'Strength', character: 'Neville Longbottom', imgPath: card8, background: hogwartsWindow},
-  {number: 'IX', title: 'Hermit', character: 'Young Tom Marvolo Riddle', imgPath: card9, background: hogwartsWindow},
-  {number: 'X', title: 'Wheel of fortune', character: 'The Prophecy', imgPath: card10, background: hogwartsWindow},
-  {number: 'XI', title: 'Justice', character: 'Alastor Moody', imgPath: card11, background: hogwartsWindow},
-  {number: 'XII', title: 'The Hanged Man', character: 'Severus Snape', imgPath: card12, background: hogwartsWindow},
-  {number: 'XIII', title: 'Death', character: 'Lord Voldemort', imgPath: card13, background: hogwartsWindow},
-  {number: 'XIV', title: 'Temperance', character: 'Ronald Weasley', imgPath: card14, background: hogwartsWindow},
-  {number: 'XV', title: 'The Devil', character: "Gellert Grindenwald", imgPath: card15, background: hogwartsWindow},
-  {number: 'XVI', title: 'The Tower', character: "Dolores Umbridge", imgPath: card16, background: hogwartsWindow},
-  {number: 'XVII', title: 'The Star', character: 'Silver Doe', imgPath: card17, background: hogwartsWindow},
-  {number: 'XVIII', title: 'The Moon', character: 'Remus Lupin', imgPath: card18, background: hogwartsWindow},
-  {number: 'XIX', title: 'The Sun', character: "Golden Snitch", imgPath: card19, background: hogwartsWindow},
-  {number: 'XX', title: 'Judgement', character: "Draco Malfoy", imgPath: card20, background: hogwartsWindow},
-  {number: 'XXI', title: 'The World', character: 'Quidditch World Cup', imgPath: card21, background: hogwartsWindow},
+  {number: 'O', title: 'The Fool', character: 'James Potter and the Marauders'},
+  {number: 'I', title: 'The Magician', character: 'Albus Dumbledore'},
+  {number: 'II', title: 'The High Priestess', character: 'Hermione Granger'},
+  {number: 'III', title: 'The Empress', character: 'Minerva McGonagall'},
+  {number: 'IV', title: 'The Emperor', character: 'Barty Crouch Sr.'},
+  {number: 'V', title: 'The Hierophant', character: 'Arthur Weasley'},
+  {number: 'VI', title: 'The Lovers', character: 'Lupin and Tonks'},
+  {number: 'VII', title: 'The Chariot', character: 'Nimbus 2000 Broomstick'},
+  {number: 'VIII', title: 'Strength', character: 'Neville Longbottom'},
+  {number: 'IX', title: 'Hermit', character: 'Young Tom Marvolo Riddle'},
+  {number: 'X', title: 'Wheel of fortune', character: 'The Prophecy'},
+  {number: 'XI', title: 'Justice', character: 'Alastor Moody'},
+  {number: 'XII', title: 'The Hanged Man', character: 'Severus Snape'},
+  {number: 'XIII', title: 'Death', character: 'Lord Voldemort'},
+  {number: 'XIV', title: 'Temperance', character: 'Ronald Weasley'},
+  {number: 'XV', title: 'The Devil', character: 'Gellert Grindenwald'},
+  {number: 'XVI', title: 'The Tower', character: 'Dolores Umbridge'},
+  {number: 'XVII', title: 'The Star', character: 'Silver Doe'},
+  {number: 'XVIII', title: 'The Moon', character: 'Remus Lupin'},
+  {number: 'XIX', title: 'The Sun', character: 'Golden Snitch'},
+  {number: 'XX', title: 'Judgement', character: 'Draco Malfoy'},
+  {number: 'XXI', title: 'The World', character: 'Quidditch World Cup'},
 ];
 
-
-const cards1 = [
-  {number: 'O', title: 'The Fool', character: 'Fred and George', imgPath: card0},
-  {number: 'I', title: 'The Magician', character: 'Albus Dumbledore', imgPath: card1},
-  {number: 'II', title: 'The High Priestess', character: 'Hermione Granger', imgPath: card2},
-  {number: 'III', title: 'The Empress', character: 'Minerva McGonagall', imgPath: card3},
-
-];
-
-// <ImagesSlider slidesData={cards} SliderField={SliderField_TarotCard}/>
+for (let card of cards) {
+  card.background = hogwartsWindow;
+}
+for (let i = 0; i < cards.length; i++) {  
+  cards[i].imgPath = images[i.toString()]; 
+}
 
 
 const HarryPotterTarotCards = () => {
