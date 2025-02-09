@@ -1,8 +1,5 @@
 
 
-.HarryPotterTarotCards .slider_1 {
-    opacity: 0;
-}
 
 
 .HarryPotterTarotCards .Card_Title_1 {
@@ -37,4 +34,16 @@
 
     letter-spacing: 1px;
     word-spacing: 5px;
+}
+
+
+
+
+
+.HarryPotterTarotCards .sliderField_0_background_0 {
+    opacity: 0;
+}
+.HarryPotterTarotCards .sliderField_0_background_1 {
+    opacity: 1;
+    background-color: white;
 }

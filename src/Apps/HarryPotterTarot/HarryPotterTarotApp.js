@@ -27,6 +27,8 @@ import card19 from './Slider/Images/19.gif';
 import card20 from './Slider/Images/20.gif';
 import card21 from './Slider/Images/21.gif';
 
+import hogwartsWindow from './window4-3.png';
+
 
 import SliderField from './Slider/SliderField/SliderField';
 
@@ -46,28 +48,28 @@ const Images = [
 
 
 const cards = [
-  {number: 'O', title: 'The Fool', character: 'James Potter and the Marauders', imgPath: card0},
-  {number: 'I', title: 'The Magician', character: 'Albus Dumbledore', imgPath: card1},
-  {number: 'II', title: 'The High Priestess', character: 'Hermione Granger', imgPath: card2},
-  {number: 'III', title: 'The Empress', character: 'Minerva McGonagall', imgPath: card3},
-  {number: 'IV', title: 'The Emperor', character: 'Barty Crouch Sr.', imgPath: card4},
-  {number: 'V', title: 'The Hierophant', character: 'Arthur Weasley', imgPath: card5, },
-  {number: 'VI', title: 'The Lovers', character: 'Lupin and Tonks', imgPath: card6, },
-  {number: 'VII', title: 'The Chariot', character: 'Nimbus 2000 Broomstick', imgPath: card7, },
-  {number: 'VIII', title: 'Strength', character: 'Neville Longbottom', imgPath: card8, },
-  {number: 'IX', title: 'Hermit', character: 'Young Tom Marvolo Riddle', imgPath: card9, },
-  {number: 'X', title: 'Wheel of fortune', character: 'The Prophecy', imgPath: card10, },
-  {number: 'XI', title: 'Justice', character: 'Alastor Moody', imgPath: card11, },
-  {number: 'XII', title: 'The Hanged Man', character: 'Severus Snape', imgPath: card12, },
-  {number: 'XIII', title: 'Death', character: 'Lord Voldemort', imgPath: card13, },
-  {number: 'XIV', title: 'Temperance', character: 'Ronald Weasley', imgPath: card14, },
-  {number: 'XV', title: 'The Devil', character: "Gellert Grindenwald", imgPath: card15, },
-  {number: 'XVI', title: 'The Tower', character: "Dolores Umbridge", imgPath: card16, },
-  {number: 'XVII', title: 'The Star', character: 'Silver Doe', imgPath: card17, },
-  {number: 'XVIII', title: 'The Moon', character: 'Remus Lupin', imgPath: card18, },
-  {number: 'XIX', title: 'The Sun', character: "Golden Snitch", imgPath: card19, },
-  {number: 'XX', title: 'Judgement', character: "Draco Malfoy", imgPath: card20, },
-  {number: 'XXI', title: 'The World', character: 'Quidditch World Cup', imgPath: card21, },
+  {number: 'O', title: 'The Fool', character: 'James Potter and the Marauders', imgPath: card0, background: hogwartsWindow},
+  {number: 'I', title: 'The Magician', character: 'Albus Dumbledore', imgPath: card1, background: hogwartsWindow},
+  {number: 'II', title: 'The High Priestess', character: 'Hermione Granger', imgPath: card2, background: hogwartsWindow},
+  {number: 'III', title: 'The Empress', character: 'Minerva McGonagall', imgPath: card3, background: hogwartsWindow},
+  {number: 'IV', title: 'The Emperor', character: 'Barty Crouch Sr.', imgPath: card4, background: hogwartsWindow},
+  {number: 'V', title: 'The Hierophant', character: 'Arthur Weasley', imgPath: card5, background: hogwartsWindow},
+  {number: 'VI', title: 'The Lovers', character: 'Lupin and Tonks', imgPath: card6, background: hogwartsWindow},
+  {number: 'VII', title: 'The Chariot', character: 'Nimbus 2000 Broomstick', imgPath: card7, background: hogwartsWindow},
+  {number: 'VIII', title: 'Strength', character: 'Neville Longbottom', imgPath: card8, background: hogwartsWindow},
+  {number: 'IX', title: 'Hermit', character: 'Young Tom Marvolo Riddle', imgPath: card9, background: hogwartsWindow},
+  {number: 'X', title: 'Wheel of fortune', character: 'The Prophecy', imgPath: card10, background: hogwartsWindow},
+  {number: 'XI', title: 'Justice', character: 'Alastor Moody', imgPath: card11, background: hogwartsWindow},
+  {number: 'XII', title: 'The Hanged Man', character: 'Severus Snape', imgPath: card12, background: hogwartsWindow},
+  {number: 'XIII', title: 'Death', character: 'Lord Voldemort', imgPath: card13, background: hogwartsWindow},
+  {number: 'XIV', title: 'Temperance', character: 'Ronald Weasley', imgPath: card14, background: hogwartsWindow},
+  {number: 'XV', title: 'The Devil', character: "Gellert Grindenwald", imgPath: card15, background: hogwartsWindow},
+  {number: 'XVI', title: 'The Tower', character: "Dolores Umbridge", imgPath: card16, background: hogwartsWindow},
+  {number: 'XVII', title: 'The Star', character: 'Silver Doe', imgPath: card17, background: hogwartsWindow},
+  {number: 'XVIII', title: 'The Moon', character: 'Remus Lupin', imgPath: card18, background: hogwartsWindow},
+  {number: 'XIX', title: 'The Sun', character: "Golden Snitch", imgPath: card19, background: hogwartsWindow},
+  {number: 'XX', title: 'Judgement', character: "Draco Malfoy", imgPath: card20, background: hogwartsWindow},
+  {number: 'XXI', title: 'The World', character: 'Quidditch World Cup', imgPath: card21, background: hogwartsWindow},
 ];
 
 
